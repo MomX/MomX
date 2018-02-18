@@ -5,6 +5,8 @@ _A package to organize all MomX packages_
 As of today, Feb 2018, all of this is still being designed. Progress percentages roughly indicate development status. All projects will progressively be moved here and an initial release is targeted at June 2018. 
 All comments and help is welcome!
 
+# Ingredients
+
 __MomX__ aims to implement a pure R workflow for everything morphometrics. It consists of packages that goes together well, namely: 
 
 * ![Progress](http://progressed.io/bar/80)  __Momocs__ is the mother ship of MomX. It allows to import, manipulate and transforme collections of outlines, curves and landmarks and summarizing them into quantitative variables. The latter can then help discover and test hypotheses on shape morphological space.

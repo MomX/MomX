@@ -1,28 +1,59 @@
-# MomX
-_A package to organize all MomX packages_
 
-# News
-As of today, Feb 2018, all of this is still being designed. Progress percentages roughly indicate development status. All projects will progressively be moved here and an initial release is targeted at June 2018. 
-All comments and help is welcome!
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+MomX
+----
 
-# Ingredients
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX) [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)
 
-__MomX__ aims to implement a pure R workflow for everything morphometrics. It consists of packages that goes together well, namely: 
+The goal of MomX is to ease utilisation of other MomX packages.
 
-* ![Progress](http://progressed.io/bar/80)  __Momocs__ is the mother ship of MomX. It allows to import, manipulate and transforme collections of outlines, curves and landmarks and summarizing them into quantitative variables. The latter can then help discover and test hypotheses on shape morphological space.
+Installation
+------------
 
-* ![Progress](http://progressed.io/bar/80)  __Momecs__ , fully interactive, can ease exploration and testing.
+### Installation
 
-* ![Progress](http://progressed.io/bar/30)  __Momacs__, fully interactive, is intented to ease shape digitization. Raw images can be ajusted and morphometric data acquired using a smooth workflow.
+The (future) released version will be installable from [CRAN](https://CRAN.R-project.org/package=MomX) with:
 
-* ![Progress](http://progressed.io/bar/80)  __Momit__ defines a minimal file format for morphometric data, easy to parse - for computers, and to read - for us, mere humans.
+``` r
+install.packages("Momocs")
+```
 
-* ![Progress](http://progressed.io/bar/10) __Mombank__ prototypes what an open-source and comfy morphometric data repository may look like.
+But I recommend using the development version from GitHub with:
 
-* ![Progress](http://progressed.io/bar/10) __Momfarm__ is a recreationnal package to breed shapes.
+``` r
+# install.packages("devtools")
+devtools::install_github("MomX/MomX")
+```
 
-# Philosophy
+<!--
+### Example
 
-# Architecture 
+This is a basic example which shows you how to solve a common problem:
 
-# Features
+
+```r
+## basic example code
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+
+```r
+summary(cars)
+#>      speed           dist       
+#>  Min.   : 4.0   Min.   :  2.00  
+#>  1st Qu.:12.0   1st Qu.: 26.00  
+#>  Median :15.0   Median : 36.00  
+#>  Mean   :15.4   Mean   : 42.98  
+#>  3rd Qu.:19.0   3rd Qu.: 56.00  
+#>  Max.   :25.0   Max.   :120.00
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
+
+You can also embed plots, for example:
+
+<img src="man/figures/README-pressure-1.png" width="100%" />
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
+-->

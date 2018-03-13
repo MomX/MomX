@@ -5,17 +5,19 @@ MomX
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX) [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)
 
-MomX packages are an ecosystem of packages for everything 2D morphometrics, that is the statistical description of shape and its (co)variation. This is (very largely) inspired by the [tidyverse](https://tidyverse.org)
+MomX is an ecosystem of R packages for everything 2D morphometrics, that is the statistical description of shape and its (co)variation.
 
 MomX packages share common principles and work together well. This eponymous package is designed to make it easy to install and load core MomX packages in a single step.
 
 Besides MomX itself, these packages are currently in development:
 
--   **[Momocs](http://momx.github.io/Momocs/)**: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
--   **[Momacs](https://github.com/Falindir/Momacs)**: acquisition of morphometrics data
--   **[Momecs](https://github.com/MomX/Momecs)**: multivariate analyses for morphometrics data
--   **[Momit](https://github.com/MomX/Momit)**: morphometrics data conversion and exchange
--   **[Momfarm](https://github.com/MomX/Momfarm)**: breeding shapes
+-   :dove:**[Momocs](http://momx.github.io/Momocs/)**: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
+-   :eye:**[Momacs](https://github.com/Falindir/Momacs)**: acquisition of morphometrics data
+-   :baby\_bottle:**[Momecs](https://github.com/MomX/Momecs)**: multivariate analyses for morphometrics data
+-   :honey\_pot:**[Momit](https://github.com/MomX/Momit)**: morphometrics data conversion and exchange
+-   :tractor:**[Momfarm](https://github.com/MomX/Momfarm)**: breeding shapes
+
+This is (very largely) inspired by the [tidyverse](https://tidyverse.org)
 
 ### Installation
 

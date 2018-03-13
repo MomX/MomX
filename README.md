@@ -17,9 +17,6 @@ Besides MomX itself, these packages are currently in development:
 -   **Momit**: morphometrics data conversion and exchange
 -   **Momfarm**: breeding shapes
 
-Installation
-------------
-
 ### Installation
 
 The (future) released version will be installable from [CRAN](https://CRAN.R-project.org/package=MomX) with:

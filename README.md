@@ -11,11 +11,11 @@ MomX packages share common principles and work together well. This eponymous pac
 
 Besides MomX itself, these packages are currently in development:
 
--   :dove:**[Momocs](http://momx.github.io/Momocs/)**: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
--   :eye:**[Momacs](https://github.com/Falindir/Momacs)**: acquisition of morphometrics data
--   :baby\_bottle:**[Momecs](https://github.com/MomX/Momecs)**: multivariate analyses for morphometrics data
--   :honey\_pot:**[Momit](https://github.com/MomX/Momit)**: morphometrics data conversion and exchange
--   :tractor:**[Momfarm](https://github.com/MomX/Momfarm)**: breeding shapes
+-   **[Momocs](http://momx.github.io/Momocs/)**: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
+-   **[Momacs](https://github.com/Falindir/Momacs)**: acquisition of morphometrics data
+-   **[Momecs](https://github.com/MomX/Momecs)**: multivariate analyses for morphometrics data
+-   **[Momit](https://github.com/MomX/Momit)**: morphometrics data conversion and exchange
+-   **[Momfarm](https://github.com/MomX/Momfarm)**: breeding shapes
 
 This is (very largely) inspired by the [tidyverse](https://tidyverse.org)
 

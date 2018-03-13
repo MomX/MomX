@@ -11,13 +11,20 @@ MomX packages share common principles and work together well. This eponymous pac
 
 Besides MomX itself, these packages are currently in development:
 
--   **[Momocs](http://momx.github.io/Momocs/)**: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes. [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing) [![Travis-CI Build Status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs) [![Coverage Status](https://img.shields.io/codecov/c/MomX/Momocs/master.svg)](https://codecov.io/github/MomX/Momocs?branch=master) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/Momocs)](http://cran.r-project.org/package=Momocs)
+-   **[Momocs](http://momx.github.io/Momocs/)**: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
 -   **[Momacs](https://github.com/Falindir/Momacs)**: acquisition of morphometrics data
 -   **[Momecs](https://github.com/MomX/Momecs)**: multivariate analyses for morphometrics data
 -   **[Momit](https://github.com/MomX/Momit)**: morphometrics data conversion and exchange
 -   **[Momfarm](https://github.com/MomX/Momfarm)**: breeding shapes
 
 This is (very largely) inspired by the [tidyverse](https://tidyverse.org)
+
+### Status
+
+| Package | Lifecycle                                                                                                                         | Travis                                                                                                              | CRAN                                                                                                           |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| Momocs  | [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)           | [![Travis-CI Build Status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs) | [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/Momocs)](http://cran.r-project.org/package=Momocs) |
+| Others  | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | NA                                                                                                                  | NA                                                                                                             |
 
 ### Installation
 
@@ -38,6 +45,7 @@ Then, all MomX packages (only Momocs so far) will be loadable with a single call
 
 ``` r
 library(MomX)
+#> ── Attaching packages ───────────────────────────── MomX 0.0.0.9000 ──
 #> ✔ Momocs 1.2.5
 #> 
 ```

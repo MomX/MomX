@@ -74,8 +74,7 @@
 <p>Besides MomX itself, these packages are currently in development:</p>
 <ul>
 <li>
-<strong><a href="http://momx.github.io/Momocs/">Momocs</a></strong>: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes. <a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle"></a> <a href="https://travis-ci.org/MomX/Momocs"><img src="https://travis-ci.org/MomX/Momocs.svg?branch=master" alt="Travis-CI Build Status"></a> <a href="https://codecov.io/github/MomX/Momocs?branch=master"><img src="https://img.shields.io/codecov/c/MomX/Momocs/master.svg" alt="Coverage Status"></a> <a href="http://cran.r-project.org/package=Momocs"><img src="http://www.r-pkg.org/badges/version/Momocs" alt="CRAN_Status_Badge"></a>
-</li>
+<strong><a href="http://momx.github.io/Momocs/">Momocs</a></strong>: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.</li>
 <li>
 <strong><a href="https://github.com/Falindir/Momacs">Momacs</a></strong>: acquisition of morphometrics data</li>
 <li>
@@ -86,6 +85,32 @@
 <strong><a href="https://github.com/MomX/Momfarm">Momfarm</a></strong>: breeding shapes</li>
 </ul>
 <p>This is (very largely) inspired by the <a href="https://tidyverse.org">tidyverse</a></p>
+<div id="status" class="section level3">
+<h3 class="hasAnchor">
+<a href="#status" class="anchor"></a>Status</h3>
+<table class="table">
+<thead><tr class="header">
+<th>Package</th>
+<th>Lifecycle</th>
+<th>Travis</th>
+<th>CRAN</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Momocs</td>
+<td><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle"></a></td>
+<td><a href="https://travis-ci.org/MomX/Momocs"><img src="https://travis-ci.org/MomX/Momocs.svg?branch=master" alt="Travis-CI Build Status"></a></td>
+<td><a href="http://cran.r-project.org/package=Momocs"><img src="http://www.r-pkg.org/badges/version/Momocs" alt="CRAN_Status_Badge"></a></td>
+</tr>
+<tr class="even">
+<td>Others</td>
+<td><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="lifecycle"></a></td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div id="installation" class="section level3">
 <h3 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h3>
@@ -96,6 +121,7 @@
 devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"MomX/MomX"</span>)</code></pre></div>
 <p>Then, all MomX packages (only Momocs so far) will be loadable with a single call to:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(MomX)
+<span class="co">#&gt; ── Attaching packages ───────────────────────────── MomX 0.0.0.9000 ──</span>
 <span class="co">#&gt; ✔ Momocs 1.2.5</span>
 <span class="co">#&gt; </span></code></pre></div>
 <p>and installable/updatable with :</p>

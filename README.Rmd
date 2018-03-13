@@ -25,7 +25,10 @@ MomX packages share common principles and work together well. This eponymous pac
 
 Besides MomX itself, these packages are currently in development:
 
-* __[Momocs](http://momx.github.io/Momocs/)__: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
+* :dove: __[Momocs](http://momx.github.io/Momocs/)__: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes. [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![Travis-CI Build Status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)
+[![Coverage Status](https://img.shields.io/codecov/c/MomX/Momocs/master.svg)](https://codecov.io/github/MomX/Momocs?branch=master)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/Momocs)](http://cran.r-project.org/package=Momocs)
 * __[Momacs](https://github.com/Falindir/Momacs)__: acquisition of morphometrics data
 * __[Momecs](https://github.com/MomX/Momecs)__: multivariate analyses for morphometrics data
 * __[Momit](https://github.com/MomX/Momit)__: morphometrics data conversion and exchange

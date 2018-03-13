@@ -12,7 +12,7 @@ core_unloaded <- function() {
 }
 
 # Grab a package version
-package_version <- function(x) {
+MomX_package_version <- function(x) {
   version <- as.character(unclass(utils::packageVersion(x))[[1]])
 
   if (length(version) > 3) {

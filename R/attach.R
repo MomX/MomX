@@ -14,12 +14,12 @@ MomX_attach <- function() {
   # msg(
   #   cli::rule(
   #     left = crayon::bold("Attaching packages"),
-  #     right = paste0("MomX ", package_version("MomX"))
+  #     right = paste0("MomX ", MomX_package_version("MomX"))
   #   ),
   #   startup = TRUE
   # )
 
-  versions <- vapply(to_load, package_version, character(1))
+  versions <- vapply(to_load, MomX_package_version, character(1))
   packages <- paste0(
     crayon::green(cli::symbol$tick), " ", crayon::blue(format(to_load)), " ",
     crayon::col_align(versions, max(crayon::col_nchar(versions)))

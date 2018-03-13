@@ -11,13 +11,13 @@ MomX_attach <- function() {
   if (length(to_load) == 0)
     return(invisible())
 
-  # msg(
-  #   cli::rule(
-  #     left = crayon::bold("Attaching packages"),
-  #     right = paste0("MomX ", MomX_package_version("MomX"))
-  #   ),
-  #   startup = TRUE
-  # )
+  msg(
+    cli::rule(
+      left = crayon::bold("Attaching packages"),
+      right = paste0("MomX ", MomX_package_version("MomX"))
+    ),
+    startup = TRUE
+  )
 
   versions <- vapply(to_load, MomX_package_version, character(1))
   packages <- paste0(

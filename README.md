@@ -11,7 +11,7 @@ MomX packages share common principles and work together well. This eponymous pac
 
 Besides MomX itself, these packages are currently in development:
 
--   **[Momocs](https://github.com/MomX/Momocs)**: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
+-   **[Momocs](http://momx.github.io/Momocs/)**: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
 -   **[Momacs](https://github.com/Falindir/Momacs)**: acquisition of morphometrics data
 -   **[Momecs](https://github.com/MomX/Momecs)**: multivariate analyses for morphometrics data
 -   **[Momit](https://github.com/MomX/Momit)**: morphometrics data conversion and exchange

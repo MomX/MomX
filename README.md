@@ -17,8 +17,6 @@ Besides MomX itself, these packages are currently in development:
 -   **Momit**: morphometrics data conversion and exchange
 -   **Momfarm**: breeding shapes
 
-\_\_
-
 Installation
 ------------
 

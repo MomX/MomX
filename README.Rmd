@@ -31,7 +31,6 @@ Besides MomX itself, these packages are currently in development:
 * __Momit__: morphometrics data conversion and exchange
 * __Momfarm__: breeding shapes
 
-__
 
 ## Installation
 

@@ -3,7 +3,7 @@
   if (length(needed) == 0)
     return()
 
-  crayon::num_colors(TRUE)
+  # crayon::num_colors(TRUE)
   MomX_attach()
 
   x <- MomX_conflicts()

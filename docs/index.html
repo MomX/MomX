@@ -74,28 +74,28 @@
 <p>Besides MomX itself, these packages are currently in development:</p>
 <ul>
 <li>
-<strong>Momocs</strong>: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.</li>
+<strong><a href="https://github.com/MomX/Momocs">Momocs</a></strong>: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.</li>
 <li>
-<strong>Momacs</strong>: acquisition of morphometrics data</li>
+<strong><a href="https://github.com/Falindir/Momacs">Momacs</a></strong>: acquisition of morphometrics data</li>
 <li>
-<strong>Momecs</strong>: multivariate analyses for morphometrics data</li>
+<strong><a href="https://github.com/MomX/Momecs">Momecs</a></strong>: multivariate analyses for morphometrics data</li>
 <li>
-<strong>Momit</strong>: morphometrics data conversion and exchange</li>
+<strong><a href="https://github.com/MomX/Momit">Momit</a></strong>: morphometrics data conversion and exchange</li>
 <li>
-<strong>Momfarm</strong>: breeding shapes</li>
+<strong><a href="https://github.com/MomX/Momfarm">Momfarm</a></strong>: breeding shapes</li>
 </ul>
 <div id="installation" class="section level3">
 <h3 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h3>
 <p>The (future) released version will be installable from <a href="https://CRAN.R-project.org/package=MomX">CRAN</a> with:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">"MomX"</span>)</code></pre></div>
-<p>But I recommend using the development version from GitHub with:</p>
+<p>But I recommend using the (working) development version from GitHub with:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("devtools")</span>
 devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"MomX/MomX"</span>)</code></pre></div>
-<p>Then, all MomX packages will be loadable with a single call to:</p>
+<p>Then, all MomX packages (only Momocs so far) will be loadable with a single call to:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(MomX)</code></pre></div>
 <p>and installable/updatable with :</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">MomX_update</span>()
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/MomX_update.html">MomX_update</a></span>()
 <span class="kw">MomX_dev</span>()</code></pre></div>
 <!--
 ### Example

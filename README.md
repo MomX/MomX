@@ -11,11 +11,11 @@ MomX packages share common principles and work together well. This eponymous pac
 
 Besides MomX itself, these packages are currently in development:
 
--   **Momocs**: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
--   **Momacs**: acquisition of morphometrics data
--   **Momecs**: multivariate analyses for morphometrics data
--   **Momit**: morphometrics data conversion and exchange
--   **Momfarm**: breeding shapes
+-   **[Momocs](https://github.com/MomX/Momocs)**: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
+-   **[Momacs](https://github.com/Falindir/Momacs)**: acquisition of morphometrics data
+-   **[Momecs](https://github.com/MomX/Momecs)**: multivariate analyses for morphometrics data
+-   **[Momit](https://github.com/MomX/Momit)**: morphometrics data conversion and exchange
+-   **[Momfarm](https://github.com/MomX/Momfarm)**: breeding shapes
 
 ### Installation
 
@@ -25,14 +25,14 @@ The (future) released version will be installable from [CRAN](https://CRAN.R-pro
 install.packages("MomX")
 ```
 
-But I recommend using the development version from GitHub with:
+But I recommend using the (working) development version from GitHub with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("MomX/MomX")
 ```
 
-Then, all MomX packages will be loadable with a single call to:
+Then, all MomX packages (only Momocs so far) will be loadable with a single call to:
 
 ``` r
 library(MomX)

@@ -48,7 +48,7 @@ devtools::install_github("MomX/MomX")
 
 Then, all MomX packages (only Momocs so far) will be loadable with a single call to:
 
-```{r attach, eval=FALSE}
+```{r attach, eval=TRUE}
 library(MomX)
 ```
 

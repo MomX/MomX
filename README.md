@@ -38,6 +38,8 @@ Then, all MomX packages (only Momocs so far) will be loadable with a single call
 
 ``` r
 library(MomX)
+#> ✔ Momocs 1.2.5
+#> 
 ```
 
 and installable/updatable with :

@@ -1,10 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-MomX
-----
+MomX <img src="https://noto-website-2.storage.googleapis.com/emoji/emoji_u1f984.png" width="30px">
+--------------------------------------------------------------------------------------------------
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX) [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)
+*Part of [MomX](https://momx.github.io/MomX/)*
 
+<!--
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX)
+[![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)
+-->
 MomX is an ecosystem of R packages for everything 2D morphometrics, that is the statistical description of shape and its (co)variation.
 
 MomX packages share common principles and work together well. This eponymous package is designed to make it easy to install and load core MomX packages in a single step.
@@ -21,10 +26,12 @@ This is (very largely) inspired by the [tidyverse](https://tidyverse.org)
 
 ### Status
 
-| Package | Lifecycle                                                                                                                         | Travis                                                                                                              | CRAN                                                                                                           |
-|---------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Momocs  | [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)           | [![Travis-CI Build Status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs) | [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/Momocs)](http://cran.r-project.org/package=Momocs) |
-| Others  | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | NA                                                                                                                  | NA                                                                                                             |
+| Package | Lifecycle                                                                                                                         | Travis                                                                                                              | CRAN                                                                                                         |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| MomX    | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX)        | [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)         |
+| Momocs  | [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)           | [![Travis-CI Build Status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs) | [![CRAN Status Badge](http://www.r-pkg.org/badges/version/Momocs)](http://cran.r-project.org/package=Momocs) |
+| Momecs  | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momecs.svg?branch=master)](https://travis-ci.org/MomX/Momecs)    | [![CRAN status](https://www.r-pkg.org/badges/version/Momecs)](https://cran.r-project.org/package=Momecs)     |
+| Others  | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | NA                                                                                                                  | NA                                                                                                           |
 
 ### Installation
 
@@ -45,9 +52,13 @@ Then, all MomX packages (only Momocs so far) will be loadable with a single call
 
 ``` r
 library(MomX)
-#> ── Attaching packages ───────────────────────────── MomX 0.0.0.9000 ──
-#> ✔ Momocs 1.2.5
+#> Loading required package: Momocs
+#> This is Momocs 1.2.9.1
 #> 
+#> Attaching package: 'Momocs'
+#> The following object is masked from 'package:stats':
+#> 
+#>     filter
 ```
 
 and installable/updatable with :

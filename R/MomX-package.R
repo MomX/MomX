@@ -1,7 +1,7 @@
 #' @keywords internal
 "_PACKAGE"
 
-core <- c("Momocs")
+core <- c("Momocs", "Momecs")
 
 .onAttach <- function(libname, pkgname) {
   needed <- as.list(core[!is_attached(core)])

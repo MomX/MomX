@@ -147,19 +147,16 @@
 <a href="#installation" class="anchor"></a>Installation</h3>
 <p>The (future) released version will be installable from <a href="https://CRAN.R-project.org/package=MomX">CRAN</a> with:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">"MomX"</span>)</code></pre></div>
-<p>But I recommend using the (working) development version from GitHub with:</p>
+<p>But, so far, and for all MomX packages, I strongly recommend (and typically only support) using the development version that can be installed from GitHub with:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("devtools")</span>
 devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"MomX/MomX"</span>)</code></pre></div>
 <p>Then, all MomX packages (only Momocs so far) will be loadable with a single call to:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(MomX)
-<span class="co">#&gt; Loading required package: Momocs</span>
-<span class="co">#&gt; This is Momocs 1.2.9.1</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Attaching package: 'Momocs'</span>
-<span class="co">#&gt; The following object is masked from 'package:stats':</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;     filter</span></code></pre></div>
-<p>and installable/updatable with :</p>
+<span class="co">#&gt; ───────────────────────────  Attaching MomX packages  ────────────────────────── </span>
+<span class="co">#&gt; → Momocs     1.2.9.1      </span>
+<span class="co">#&gt; → Momecs     0.0.0.9000   </span>
+<span class="co">#&gt; ─────────────────────────────────────── ✔ ──────────────────────────────────────</span></code></pre></div>
+<p>MomX packages will soon be updatable with :</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">MomX_update</span>()
 <span class="kw">MomX_dev</span>()</code></pre></div>
 <!--

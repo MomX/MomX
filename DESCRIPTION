@@ -19,8 +19,8 @@ BugReports: https://github.com/MomX/MomX
 Imports: 
     cli (>= 1.0.0),
     crayon (>= 1.3.4),
-    magrittr (>= 1.5),
-    purrr (>= 0.2.4),
+    devtools (>= 1.13.5),
+    utils
 Suggests: 
     knitr (>= 1.17),
     rmarkdown (>= 1.7.4)

@@ -109,12 +109,13 @@ pkg_load_or_install_cran_then_github <- function(pkg){
   cat(cli::symbol$arrow_right, pkg, "\t")
   loaded <- require(pkg, character.only = TRUE)
 
-  # if not already succeed, try to install from CRAN
-  if (!loaded){
-    cat(crayon::blue("trying to install from CRAN\t"))
-    utils::install.packages(pkg, dependencies =TRUE)
-    loaded <- require(pkg, character.only = TRUE)
-  }
+  # Uncomment below when everything will be ok
+  # # if not already succeed, try to install from CRAN
+  # if (!loaded){
+  #   cat(crayon::blue("trying to install from CRAN\t"))
+  #   utils::install.packages(pkg, dependencies =TRUE)
+  #   loaded <- require(pkg, character.only = TRUE)
+  # }
 
   # if not already succeed, try to install from GitHub
   if (!loaded){

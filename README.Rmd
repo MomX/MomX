@@ -56,7 +56,7 @@ The (future) released version will be installable from [CRAN](https://CRAN.R-pro
 install.packages("MomX")
 ```
 
-But I recommend using the (working) development version from GitHub with:
+But, so far, and for all MomX packages, I strongly recommend (and typically only support) using the development version that can be installed from GitHub with:
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("MomX/MomX")
@@ -68,10 +68,12 @@ Then, all MomX packages (only Momocs so far) will be loadable with a single call
 library(MomX)
 ```
 
-and installable/updatable with :
+MomX packages can be attached, detached, updated from CRAN, updated from [GitHub](http://github.com/MomX) with:
 ```{r update, eval=FALSE}
-MomX_update()
-MomX_dev()
+MomX_attach()        # already called by library(MomX)
+MomX_detach()
+MomX_update_cran()
+MomX_update_github()
 ```
 
 

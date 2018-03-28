@@ -60,11 +60,13 @@ library(MomX)
 #> ─────────────────────────────────────── ✔ ──────────────────────────────────────
 ```
 
-MomX packages will soon be updatable with :
+MomX packages can be attached, detached, updated from CRAN, updated from [GitHub](http://github.com/MomX) with:
 
 ``` r
-MomX_update()
-MomX_dev()
+MomX_attach()        # already called by library(MomX)
+MomX_detach()
+MomX_update_cran()
+MomX_update_github()
 ```
 
 <!--

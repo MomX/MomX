@@ -23,6 +23,12 @@ _Part of [MomX](https://momx.github.io/MomX/)_
 [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)
 -->
 
+#### News
+* I plan a first working version of all packages in July/August 2018.
+* Drop me a line if you want you me to send updates (1 email per month at most) or simply get in touch for any other reason: `bonhomme.vincent@gmail.com`
+
+----
+
 MomX is an ecosystem of R packages for everything 2D morphometrics, that is the statistical description of shape and its (co)variation. It is intended to provide a complete, comfortable, powerful, and - last but not least - open-source workflow for morphometrics in R.
 
 MomX packages share common principles and work together well. This architecture is largely inspired by the [tidyverse](https://tidyverse.org). 
@@ -34,8 +40,6 @@ Core MomX currently includes:
 * __[Momit](http://momx.github.io/Momit/)__: morphometrics data conversion and exchange
 * __[Momocs](http://momx.github.io/Momocs/)__: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes
 * __[Momecs](http://momx.github.io/Momecs/)__: multivariate analyses for multivariate data, notably morphometrics
-
-__I plan a first working version of all packages in July/August 2018.__
 
 You can follow their development/status below:
 

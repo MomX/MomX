@@ -14,9 +14,8 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-## MomX <img src="https://noto-website-2.storage.googleapis.com/emoji/emoji_u1f984.png" width="30px">
-
-_Part of [MomX](https://momx.github.io/MomX/)_ 
+## MomX  
+_Part of [MomX](https://momx.github.io/MomX/)_
 
 <!--
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
@@ -24,34 +23,31 @@ _Part of [MomX](https://momx.github.io/MomX/)_
 [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)
 -->
 
-MomX is an ecosystem of R packages for everything 2D morphometrics, that is the statistical description of shape and its (co)variation. 
+MomX is an ecosystem of R packages for everything 2D morphometrics, that is the statistical description of shape and its (co)variation. It is intended to provide a complete, comfortable, powerful, and - last but not least - open-source workflow for morphometrics in R.
 
-It is intended to provide a complete, comfortable, powerful, and - last but not least - open-source workflow for morphometrics in R.
+MomX packages share common principles and work together well. This architecture is largely inspired by the [tidyverse](https://tidyverse.org). 
 
-MomX packages share common principles and work together well. This eponymous package is designed to make it easy to install and load core MomX packages in a single step.
+Core MomX currently includes:
 
-Besides MomX itself, these packages are currently in development:
+* __[MomX](https://momx.github.io/MomX/)__: make it easy to install/load/update all MomX packages
+* __[Momacs](https://github.com/MomX/Momacs)__: acquisition of morphometrics data
+* __[Momit](http://momx.github.io/Momit/)__: morphometrics data conversion and exchange
+* __[Momocs](http://momx.github.io/Momocs/)__: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes
+* __[Momecs](http://momx.github.io/Momecs/)__: multivariate analyses for multivariate data, notably morphometrics
 
-* __[Momocs](http://momx.github.io/Momocs/)__: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes.
-* __[Momacs](https://github.com/Falindir/Momacs)__: acquisition of morphometrics data.
-* __[Momoshop](https://github.com/vbonhomme/Momoshop)__: image post-production on top of `magick`.
-* __[Momit](http://momx.github.io/Momit/)__: morphometrics data conversion and exchange.
-* __[Momecs](http://momx.github.io/Momecs/)__: multivariate analyses for multivariate data, notably morphometrics.
-* __[Momfarm](http://momx.github.io/Momfarm/)__: breeding shapes on top of Momocs. Mostly used, so far, to prototype ideas.
+__I plan a first working version of all packages in July/August 2018.__
 
-This is (very largely) inspired by the [tidyverse](https://tidyverse.org).
-
-### Core MomX packages
+You can follow their development/status below:
 
 Package     |  Lifecycle    |  Travis    |  CRAN      | Website
 ------------|---------------|------------|------------| ---------------
 MomX        | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX) | [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX) | [MomX.github.io/MomX](http://momx.github.io/MomX)
-Momacs      | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs) | [![CRAN status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs) | soon
+Momacs      | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs) | [![CRAN status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs) | [https://github.com/MomX/Momacs](https://github.com/MomX/Momacs)
 Momit      | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momit.svg?branch=master)](https://travis-ci.org/MomX/Momit) | [![CRAN status](https://www.r-pkg.org/badges/version/Momit)](https://cran.r-project.org/package=Momit) | [MomX.github.io/Momit](http://momx.github.io/Momit)
 Momocs      | [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing) | [![Travis-CI Build Status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs) | [![CRAN Status Badge](http://www.r-pkg.org/badges/version/Momocs)](http://cran.r-project.org/package=Momocs) | [MomX.github.io/Momocs](http://momx.github.io/Momocs)
 Momecs      | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momecs.svg?branch=master)](https://travis-ci.org/MomX/Momecs) | [![CRAN status](https://www.r-pkg.org/badges/version/Momecs)](https://cran.r-project.org/package=Momecs) | [MomX.github.io/Momecs](http://momx.github.io/Momecs)
 
-### Protypic MomX packages
+Other protypic MomX packages follows:
 
 Package     |  Lifecycle    |  Travis    |  CRAN      | Website
 ------------|---------------|------------|------------| ---------------
@@ -79,35 +75,8 @@ library(MomX)
 
 MomX packages can be attached, detached, updated from CRAN, updated from [GitHub](http://github.com/MomX) with:
 ```{r update, eval=FALSE}
-MomX_attach()        # already called by library(MomX)
+MomX_attach()        # equivalent to: library(MomX)
 MomX_detach()
 MomX_update_cran()
 MomX_update_github()
 ```
-
-
-<!--
-### Example
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
--->

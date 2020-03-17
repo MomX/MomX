@@ -36,12 +36,12 @@ This repos will report advances on MomX development.
 | :blue_book:[Mombook](https://github.com/MomX/Mombook)        | meta          | a book collating all vignettes               | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | _no CI_                                                                                                              | _not for CRAN_                                                                                               |
 | :package:[Momdata](https://github.com/MomX/Momdata)          | meta          | a data package                               | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momdata.svg?branch=master)](https://travis-ci.org/MomX/Momdata)   | _not for CRAN_                                                                                               |
 |                                                              |               |                                              |                                                                                                                                   |                                                                                                                      |                                                                                                              |
-### Priorities
-1. Momocs 2.0
-2. Momstats
-3. Momit
-4. Momacs
-5. Momoshop
+### Priorities (planned release 2020)
+1. Momocs 2.0 (April)
+2. Momstats (April)
+3. Momit (April)
+4. Momacs (June)
+5. Momoshop (June)
 
 ### General philosophy
 * Provide a complete toolkit for the whole morphometric pipeline.

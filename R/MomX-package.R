@@ -9,95 +9,6 @@ core <- c("Momocs", "Momecs")
   MomX_attach()
 }
 
-# MomX_funs ------------
-
-#' Attach, detach, install, update MomX packages
-#'
-#' Some MomX packages are still considered experimental.
-#'
-#' @name MomX_funs
-#' @rdname MomX_funs
-#' @export
-MomX_attach <- function(){
-  # check which are already attached
-  needed <- as.list(core[!is_attached(core)])
-  if (length(needed) == 0)
-    return()
-
-  # start rule
-  cat(cli::rule(center = crayon::green(" Attaching MomX packages "),
-                line_col="silver"), "\n")
-
-  # load/install them all
-  statuses <- suppressPackageStartupMessages(
-    sapply(core, pkg_load_or_install_cran_then_github)
-  )
-
-  # ending rule with global status
-  if (all(statuses))
-    cat(cli::rule(center = crayon::green(cli::symbol$tick),
-                  line_col="silver"))
-  else
-    cat(cli::rule(center = crayon::red(cli::symbol$cross),
-                  line_col="silver"), "\n")
-
-}
-
-#' @name MomX_funs
-#' @rdname MomX_funs
-#' @export
-MomX_detach <- function(){
-  # detach them all
-  status <- all(sapply(sapply(core, detach1), is.null))
-  # report status
-  if (status)
-    cat(crayon::green(cli::symbol$cross), "Detached all MomX packages ")
-  else
-    cat(crayon::red(cli::symbol$tick), "Some of MomX packages still attached")
-}
-
-#' @name MomX_funs
-#' @rdname MomX_funs
-#' @export
-MomX_update_cran <- function(){
-
-  # detach them all
-  status <- unlist(sapply(core, cran1))
-
-  # report status
-  if (all(status)){
-    cat(crayon::green(cli::symbol$tick),
-        "Installed the last CRAN versions of: ", paste(core, collapse=", "))
-  } else {
-    cat(crayon::green(cli::symbol$tick),
-        "Installed the last CRAN versions of: ", paste(core[status], sep=", "), "\n")
-    cat(crayon::red(cli::symbol$cross),
-        "Failed to install from CRAN: ", paste(core[!status], sep=", "), "; ")
-    cat(cli::symbol$arrow_right, " Try", crayon::cyan("MomX_update_github()"), "\n")
-  }
-}
-
-#' @name MomX_funs
-#' @rdname MomX_funs
-#' @export
-MomX_update_github <- function(){
-
-  # detach them all
-  status <- unlist(sapply(core, github1))
-
-  # report status
-  if (all(status)){
-    cat(crayon::green(cli::symbol$tick),
-        "Installed the very last GitHub versions of: ", paste(core, collapse=", "))
-  } else {
-    cat(crayon::green(cli::symbol$tick),
-        "Installed the very last GitHub versions of: ", paste(core[status], sep=", "), "\n")
-    cat(crayon::red(cli::symbol$cross),
-        "Failed to install from GitHub: ", paste(core[!status], sep=", "), "; ")
-  }
-}
-
-# helpers ------
 
 # utils --------
 is_attached <- function(x) {
@@ -193,3 +104,95 @@ github1 <- function(pkg){
     return(FALSE)
   }
 }
+
+# MomX_funs ------------
+
+#' Attach, detach, install, update MomX packages
+#'
+#' Some MomX packages are still considered experimental.
+#'
+#' @name MomX_funs
+#' @rdname MomX_funs
+#' @export
+MomX_attach <- function(){
+  # check which are already attached
+  needed <- as.list(core[!is_attached(core)])
+  if (length(needed) == 0)
+    return()
+
+  # start rule
+  cat(cli::rule(center = crayon::green(" Attaching MomX packages "),
+                line_col="silver"), "\n")
+
+  # load/install them all
+  statuses <- suppressPackageStartupMessages(
+    sapply(core, pkg_load_or_install_cran_then_github)
+  )
+
+  # ending rule with global status
+  if (all(statuses))
+    cat(cli::rule(center = crayon::green(cli::symbol$tick),
+                  line_col="silver"))
+  else
+    cat(cli::rule(center = crayon::red(cli::symbol$cross),
+                  line_col="silver"), "\n")
+
+}
+
+#' @name MomX_funs
+#' @rdname MomX_funs
+#' @export
+MomX_detach <- function(){
+  # detach them all
+  status <- all(sapply(sapply(core, detach1), is.null))
+  # report status
+  if (status)
+    cat(crayon::green(cli::symbol$cross), "Detached all MomX packages ")
+  else
+    cat(crayon::red(cli::symbol$tick), "Some of MomX packages still attached")
+}
+
+#' @name MomX_funs
+#' @rdname MomX_funs
+#' @export
+MomX_update_cran <- function(){
+
+  # detach them all
+  status <- unlist(sapply(core, cran1))
+
+  # report status
+  if (all(status)){
+    cat(crayon::green(cli::symbol$tick),
+        "Installed the last CRAN versions of: ", paste(core, collapse=", "))
+  } else {
+    cat(crayon::green(cli::symbol$tick),
+        "Installed the last CRAN versions of: ", paste(core[status], sep=", "), "\n")
+    cat(crayon::red(cli::symbol$cross),
+        "Failed to install from CRAN: ", paste(core[!status], sep=", "), "; ")
+    cat(cli::symbol$arrow_right, " Try", crayon::cyan("MomX_update_github()"), "\n")
+  }
+}
+
+#' @name MomX_funs
+#' @rdname MomX_funs
+#' @export
+MomX_update_github <- function(){
+
+  # detach them all
+  status <- unlist(sapply(core, github1))
+
+  # report status
+  if (all(status)){
+    cat(crayon::green(cli::symbol$tick),
+        "Installed the very last GitHub versions of: ", paste(core, collapse=", "))
+  } else {
+    cat(crayon::green(cli::symbol$tick),
+        "Installed the very last GitHub versions of: ", paste(core[status], sep=", "), "\n")
+    cat(crayon::red(cli::symbol$cross),
+        "Failed to install from GitHub: ", paste(core[!status], sep=", "), "; ")
+  }
+}
+
+# helpers ------
+
+

@@ -11,25 +11,54 @@
 [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)
 -->
 
-#### News
-
-  - I plan a first working version of all packages in July/August 2018.
-  - Drop me a line if you want you me to send updates (1 email per month
-    at most) or simply get in touch for any other reason:
-    `bonhomme.vincent@gmail.com`
-
------
 
 MomX is an ecosystem of R packages for everything 2D morphometrics, that
 is the statistical description of shape and its (co)variation. It is
 intended to provide a complete, comfortable, powerful, and - last but
-not least - open-source workflow for morphometrics in R.
+not least - open-source workflow for morphometrics.
 
 MomX packages share common principles and work together well. This
 architecture is largely inspired by the
 [tidyverse](https://tidyverse.org).
 
-Core MomX currently includes:
+### Advances
+This repos will report advances on MomX development.
+
+I plan the core packages to be:
+ 
+1. **data acquisition :**  
+    + Momoshop : images post-processing
+    + Momacs : interactive data acquisition from images
+    + Momit : import from images and foreign file format
+ 
+2. **data morphometrics :**  
+    + Momocs : shape manipulation and morphometrics
+    + Momstats : statistical analyses of morphometric data
+    + Momclick : the two previous, made interactive
+ 
+3. **meta packages**  
+    + MomX : to install, reinstall, load some or them all
+    + Mombook : a book collating all vignettes.
+    + Momdata : a data package
+ 
+
+| Package                  | Family        | Description                                  | Lifecycle                                                                                                                         | Passing | CRAN                                                                                                 |
+|--------------------------|---------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------|
+| :camera:Momoshop         | acquisition   | images post-processing                       | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) |         |                                                                                                      |
+| :round_pushpin: Momacs    | acquisition   | interactive acquisition from images          | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) |         |                                                                                                      |
+| :vulcan_salute: Momit     | acquisition   | import from images and foreign file format   | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) |         |                                                                                                      |
+| :dove:Momocs             | morphometrics | shape manipulation and morphometrics         | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) |         | [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX) |
+| :eagle:Momstats          | morphometrics | statistical analyses of morphometric data    | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) |         |                                                                                                      |
+| :hatching_chick:Momclick | morphometrics | the two previous, made interactive           | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) |         |                                                                                                      |
+| :ring:MomX               | meta          | to install, reinstall, load some or them all | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) |         |                                                                                                      |
+| :blue_book:Mombook       | meta          | a book collating all vignettes               | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) |         |                                                                                                      |
+| :package:Momdata         | meta          | a data package                               | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) |         |                                                                                                      |
+|                          |               |                                              |                                                                                                                                   |         |                                                                                                      |
+
+
+
+
+<!-- Core MomX currently includes:
 
   - **[MomX](https://momx.github.io/MomX/)**: make it easy to
     install/load/update all MomX packages
@@ -100,3 +129,6 @@ MomX_detach()
 MomX_update_cran()
 MomX_update_github()
 ```
+
+-->
+

@@ -6,15 +6,15 @@
 \alias{MomX-package}
 \title{MomX: Easily Install, Update and Load MomX packages}
 \description{
-MomX is an ecosystem of packages for
-everything 2D morphometrics, that is the statistical description
-of shape and its (co)variation, from data acquisition, translation,
-and manipulation to morphometrics and exploration and testing hypotheses
-on resulting multivariate coefficients.
-MomX packages share common principles and work together well.
-This eponymous package is designed to make it easy to install
-and load MomX packages in a single step.
-Learn more about MomX at <https://momx.github.io/MomX/>.
+MomX is an ecosystem of packages for 
+    everything 2D morphometrics, that is the statistical description
+    of shape and its (co)variation, from data acquisition, translation, 
+    and manipulation to morphometrics and exploration and testing hypotheses 
+    on resulting multivariate coefficients.
+    MomX packages share common principles and work together well.
+    This eponymous package is designed to make it easy to install 
+    and load MomX packages in a single step.
+    Learn more about MomX at <https://momx.github.io/MomX/>.
 }
 \seealso{
 Useful links:

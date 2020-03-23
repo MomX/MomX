@@ -3,11 +3,8 @@
 \name{MomX_funs}
 \alias{MomX_funs}
 \alias{MomX_attach}
-\alias{MomX_funs}
 \alias{MomX_detach}
-\alias{MomX_funs}
 \alias{MomX_update_cran}
-\alias{MomX_funs}
 \alias{MomX_update_github}
 \title{Attach, detach, install, update MomX packages}
 \usage{

@@ -22,6 +22,7 @@ architecture is largely inspired by the
 [tidyverse](https://tidyverse.org).
 
 ### Advances
+
 This repos will report advances on MomX development.
 
 | Package                                                      | Family        | Description                                  | Lifecycle                                                                                                                         | Passing                                                                                                              | CRAN                                                                                                         |
@@ -36,22 +37,46 @@ This repos will report advances on MomX development.
 | :blue_book:[Mombook](https://github.com/MomX/Mombook)        | meta          | a book collating all vignettes               | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | _no CI_                                                                                                              | _not for CRAN_                                                                                               |
 | :package:[Momdata](https://github.com/MomX/Momdata)          | meta          | a data package                               | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momdata.svg?branch=master)](https://travis-ci.org/MomX/Momdata)   | _not for CRAN_                                                                                               |
 |                                                              |               |                                              |                                                                                                                                   |                                                                                                                      |                                                                                                              |
-### Priorities (planned release 2020)
-1. Momocs 2.0 (April)
-2. Momstats (April)
-3. Momit (April)
-4. Momacs (June)
-5. Momoshop (June)
+
+
 
 ### General philosophy
-* Provide a complete toolkit for the whole morphometric pipeline.
-* Compartiment key processes into well-defined, interoperable packages.
-* Embrace [tidy manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html), and more generally build around tibbles.
-* Do not bound to MomX: you should be able to come and leave easily.
-* Test, document and pkgdown every package.
-* Make it work first, optimize then.
+* MomX aims to be a complete and user-friendly ecosystem for morphometrics
+* Compartiment key processes into well-defined, interoperable packages that go together well.
+* Each package should solve a single task, and do it well. Make it work, document, release, improve, repeat.
+
+MomX embraces and owns much to the [tidy manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html). Kind of theorise the programming side of morphometrics, or at least itself (yes, infinite loop). Tibbles are the answer.
+
+MomX packages share :
+* Companion website built by [pkg::pkgdown]
+* Continous integration with [Travis](travis-ci.org/)
+* Continuous testing with [pkg::testthat] and [codecov](https://codecov.io)
+
+
+
 
 ### How to help
+I'm much than welcoming contributions to MomX ! Good news is that whatever your skills, you can contribute a bit.
+
+You can :
+
+ * Signal a bug 
+ * Discuss or request a feature
+ * Code, improve, develop new features
+ * Improve examples, and my English
+ * Share datasets
+
+### How to get helped
+* Vignettes are a good place to start
+* Read the reference manual, understand examples
+* Go to walk for 2 hours in the forest
+
+Then, if you think something :
+
+* is wrong with Momocs, fill an issue with __bug__
+* is wrong with you, your data, or something local, fill an issue tagged with __help__
+* would be fantastic, fill an issue with __request__
+
 ...
 
 

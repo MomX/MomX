@@ -2,10 +2,10 @@ url: http://momx.github.io/MomX
 
 template:
   params:
-    bootswatch: flatly
+    bootswatch: cosmo
 
 home:
-  strip_header: false
+  strip_header: true
 
 navbar:
   type: default

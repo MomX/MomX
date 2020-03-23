@@ -22,9 +22,9 @@ architecture is largely inspired by the
 [tidyverse](https://tidyverse.org).
 
 ### Advances
-
 This repos will report advances on MomX development.
 
+<!--
 | Package                                                      | Family        | Description                                  | Lifecycle                                                                                                                         | Passing                                                                                                              | CRAN                                                                                                         |
 |--------------------------------------------------------------|---------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | :camera:[Momoshop](https://github.com/MomX/Momoshop)         | acquisition   | images post-processing                       | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)     | [![CRAN status](https://www.r-pkg.org/badges/version/Momoshop)](https://cran.r-project.org/package=Momoshop) |
@@ -38,6 +38,25 @@ This repos will report advances on MomX development.
 | :package:[Momdata](https://github.com/MomX/Momdata)          | meta          | a data package                               | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momdata.svg?branch=master)](https://travis-ci.org/MomX/Momdata)   | _not for CRAN_                                                                                               |
 |                                                              |               |                                              |                                                                                                                                   |                                                                                                                      |                                                                                                              |
 
+-->
+### Packages
+
+#### :dove: [Momocs](https://github.com/MomX/Momocs): shape manipulation and morphometrics
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momocs)](https://cran.r-project.org/package=Momocs) 
+
+[![Travis build status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)
+
+#### :camera: [Momoshop](https://github.com/MomX/Momoshop) : images post-processing 
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momoshop)](https://cran.r-project.org/package=Momoshop)
+
+[![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)
+
+#### :round_pushpin: [Momacs](https://github.com/MomX/Momoshop) : interactive acquisition from images
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs)
+
+[![Travis build status](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop)
+
+
 
 
 ### General philosophy
@@ -45,14 +64,14 @@ This repos will report advances on MomX development.
 * Compartiment key processes into well-defined, interoperable packages that go together well.
 * Each package should solve a single task, and do it well. Make it work, document, release, improve, repeat.
 
-MomX embraces and owns much to the [tidy manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html). Kind of theorise the programming side of morphometrics, or at least itself (yes, infinite loop). Tibbles are the answer.
+MomX embraces and owns much to the [tidy manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html). MomX kind of theorise the programming side of morphometrics, or at least itself (yes, infinite loop). Tibbles are the answer.
 
 MomX packages share :
 * Companion website built by [pkg::pkgdown]
 * Continous integration with [Travis](travis-ci.org/)
 * Continuous testing with [pkg::testthat] and [codecov](https://codecov.io)
 
-
+###
 
 
 ### How to help

@@ -5,8 +5,8 @@
 
 *Part of [MomX](https://momx.github.io/MomX/)*
 
-**Note than pretty much none of what follows will be ready before end of
-April 2020**
+**Pretty much none of what follows will be ready before end of April
+2020 \!\!\!**
 
 MomX is an ecosystem of R packages for everything 2D morphometrics, that
 is the statistical description of shape and its (co)variation.

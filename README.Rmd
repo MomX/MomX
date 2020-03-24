@@ -24,7 +24,7 @@ cartridge <- function(x, lifecycle="experimental"){
     # badger::badge_cran_download(repo),
     
     # badger::badge_cran_checks(repo),
-    "\n ",
+    "\n\n",
     paste0(
       paste0(" > [", x, " website]("),
       paste0("https://momx.github.io/", x, ")")
@@ -97,7 +97,7 @@ cartridge("Momocs2")
 ```
 
 
-#### `r emo::ji("abacus")` Momcalc [Momcalc](https://github.com/MomX/Momcalc)
+#### `r emo::ji("abacus")` [Momcalc](https://github.com/MomX/Momcalc)
 
 Wraps sensible statistics methods for morphometrics in a consistent grammar
 

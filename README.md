@@ -41,7 +41,8 @@ data
 [![](https://www.r-pkg.org/badges/version/Momit?color=green)](https://cran.r-project.org/package=Momit)
 [![](https://travis-ci.org/MomX/Momit.svg?branch=master)](https://travis-ci.org/MomX/Momit)
 [![](https://codecov.io/gh/MomX/Momit/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momit)
-\> [Momit website](https://momx.github.io/Momit)
+
+> [Momit website](https://momx.github.io/Momit)
 
 #### 🛠 [Momacs](https://github.com/MomX/Momacs)
 
@@ -53,7 +54,8 @@ interest.
 [![](https://www.r-pkg.org/badges/version/Momacs?color=green)](https://cran.r-project.org/package=Momacs)
 [![](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)
 [![](https://codecov.io/gh/MomX/Momacs/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momacs)
-\> [Momacs website](https://momx.github.io/Momacs)
+
+> [Momacs website](https://momx.github.io/Momacs)
 
 #### 📷 [Momoshop](https://github.com/MomX/Momoshop)
 
@@ -65,7 +67,8 @@ etc.
 [![](https://www.r-pkg.org/badges/version/Momoshop?color=green)](https://cran.r-project.org/package=Momoshop)
 [![](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop)
 [![](https://codecov.io/gh/MomX/Momoshop/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momoshop)
-\> [Momoshop website](https://momx.github.io/Momoshop)
+
+> [Momoshop website](https://momx.github.io/Momoshop)
 
 ### Morphometrics
 
@@ -79,9 +82,10 @@ methods.
 [![](https://www.r-pkg.org/badges/version/Momocs2?color=green)](https://cran.r-project.org/package=Momocs2)
 [![](https://travis-ci.org/MomX/Momocs2.svg?branch=master)](https://travis-ci.org/MomX/Momocs2)
 [![](https://codecov.io/gh/MomX/Momocs2/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momocs2)
-\> [Momocs2 website](https://momx.github.io/Momocs2)
 
-#### 🧮 Momcalc [Momcalc](https://github.com/MomX/Momcalc)
+> [Momocs2 website](https://momx.github.io/Momocs2)
+
+#### 🧮 [Momcalc](https://github.com/MomX/Momcalc)
 
 Wraps sensible statistics methods for morphometrics in a consistent
 grammar
@@ -90,7 +94,8 @@ grammar
 [![](https://www.r-pkg.org/badges/version/Momcalc?color=green)](https://cran.r-project.org/package=Momcalc)
 [![](https://travis-ci.org/MomX/Momcalc.svg?branch=master)](https://travis-ci.org/MomX/Momcalc)
 [![](https://codecov.io/gh/MomX/Momcalc/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momcalc)
-\> [Momcalc website](https://momx.github.io/Momcalc)
+
+> [Momcalc website](https://momx.github.io/Momcalc)
 
 #### 🔮 [Momecs](https://github.com/MomX/Momecs)
 
@@ -101,7 +106,8 @@ Momecs
 [![](https://www.r-pkg.org/badges/version/Momecs?color=green)](https://cran.r-project.org/package=Momecs)
 [![](https://travis-ci.org/MomX/Momecs.svg?branch=master)](https://travis-ci.org/MomX/Momecs)
 [![](https://codecov.io/gh/MomX/Momecs/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momecs)
-\> [Momecs website](https://momx.github.io/Momecs)
+
+> [Momecs website](https://momx.github.io/Momecs)
 
 ### Meta
 
@@ -114,7 +120,8 @@ packages
 [![](https://www.r-pkg.org/badges/version/MomX?color=green)](https://cran.r-project.org/package=MomX)
 [![](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX)
 [![](https://codecov.io/gh/MomX/MomX/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/MomX)
-\> [MomX website](https://momx.github.io/MomX)
+
+> [MomX website](https://momx.github.io/MomX)
 
 #### 📚 [Mombook](https://github.com/MomX/Momocs)
 

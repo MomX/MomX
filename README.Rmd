@@ -1,21 +1,109 @@
 ---
-output:
-  github_document:
-    html_preview: false
+  output: github_document
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r setup, include = FALSE}
+```{r, include = FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
+collapse = TRUE,
+comment = "#>",
+fig.path = "man/figures/README-",
+out.width = "100%"
 )
 ```
-## MomX  
-_Part of [MomX](https://momx.github.io/MomX/)_
+
+```{r, echo=FALSE}
+library(magrittr)
+cartridge <- function(x){
+  repo <- paste0("MomX/", x)
+  paste(
+    badger::badge_travis(repo),
+    badger::badge_cran_download(repo),
+    badger::badge_cran_release(repo, color = "green"),
+    badger::badge_cran_checks(repo),
+    sep=" "
+  ) %>% cat()
+}
+```
+
+# MomX
+*Part of [MomX](https://momx.github.io/MomX/)*
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+MomX is an ecosystem of R packages for everything 2D morphometrics, that
+is the statistical description of shape and its (co)variation. It is
+intended to provide a complete, comfortable, powerful, and - last but
+not least - open-source workflow for morphometrics.
+
+MomX packages share common principles and work together well. This
+architecture is largely inspired by the
+[tidyverse](https://tidyverse.org).
+
+Planned schedule is :
+
+1. Finish rewriting Momocs, release
+2. Port old Momocs stats to Momcalc, release
+3. Finish Momit, release
+4. Finish MomX, release
+5. Finish Momacs and Momoshop, release
+
+## Packages
+### Acquisition
+
+#### `r emo::ji("vulcan_salute")` Momit
+
+Import from various image and foreing file format and defines a portable format for morphometrics data
+
+#### `r emo::ji("hammer_and_wrench")` Momacs
+
+Interactively acquire morphometrics data from images, eg defining landmarks, curves, and other regions of interest.
+
+#### `r emo::ji("camera")` Momoshop
+
+Post-processes images, eg adjust contrast, pick channels, remove background, etc.
+
+### Morphometrics
+#### `r emo::ji("dove")` [Momocs](https://github.com/MomX/Momocs)
+
+
+Manipulating shapes and turning them into coefficients using morphometrics methods.
+
+```{r, results="asis", echo=FALSE}
+cartridge("Momocs")
+```
+
+#### `r emo::ji("abacus")` Momcalc
+Wraps sensible statistics methods for morphometrics in a consistent grammar
+
+#### `r emo::ji("crystal")` Momex
+Is the shiny child of Momocs + Momecs
+
+### Meta
+#### `r emo::ji("ring")` __MomX__ helps install and update MomX packages
+
+#### `r emo::ji("books")` __Mombook__ compiles all package documentation into a practical book for MomX
+
+#### `r emo::ji("do_not_litter")` __MomXiv__ aims at archiving and share morphometrics data
+
+<!--
+[![CRAN status](https://www.r-pkg.org/badges/version/Momocs)](https://cran.r-project.org/package=Momocs) 
+
+[![Travis build status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)
+
+
+#### :camera: [Momoshop](https://github.com/MomX/Momoshop) : images post-processing 
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momoshop)](https://cran.r-project.org/package=Momoshop)
+
+[![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)
+
+#### :round_pushpin: [Momacs](https://github.com/MomX/Momoshop) : interactive acquisition from images
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs)
+
+[![Travis build status](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop)
+
 
 <!--
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
@@ -23,64 +111,174 @@ _Part of [MomX](https://momx.github.io/MomX/)_
 [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)
 -->
 
-#### News
-* I plan a first working version of all packages in July/August 2018.
-* Drop me a line if you want you me to send updates (1 email per month at most) or simply get in touch for any other reason: `bonhomme.vincent@gmail.com`
+## General philosophy
+* MomX aims to be a complete and user-friendly ecosystem for morphometrics
+* Compartiment key processes into well-defined, interoperable packages that go together well.
+* Each package should solve a single task, and do it well. Make it work, document, release, improve, repeat.
 
-----
+MomX embraces and owns much to the [tidy manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html). MomX kind of theorise the programming side of morphometrics, or at least itself (yes, infinite loop). Tibbles are the answer.
 
-MomX is an ecosystem of R packages for everything 2D morphometrics, that is the statistical description of shape and its (co)variation. It is intended to provide a complete, comfortable, powerful, and - last but not least - open-source workflow for morphometrics in R.
+MomX packages share :
 
-MomX packages share common principles and work together well. This architecture is largely inspired by the [tidyverse](https://tidyverse.org). 
+* Continous integration with [Travis](travis-ci.org/)
+* Continuous testing with [pkg::testthat] and [codecov](https://codecov.io)
+* Companion website built by [pkg::pkgdown], at url: `MomX.github.io/packagename`
+* Cheatsheets to decorate your bathroom walls
 
-Core MomX currently includes:
 
-* __[MomX](https://momx.github.io/MomX/)__: make it easy to install/load/update all MomX packages
-* __[Momacs](https://github.com/MomX/Momacs)__: acquisition of morphometrics data
-* __[Momit](http://momx.github.io/Momit/)__: morphometrics data conversion and exchange
-* __[Momocs](http://momx.github.io/Momocs/)__: the mothership of MomX, complete 2D morphometrics toolbox from shapes and collections of shapes
-* __[Momecs](http://momx.github.io/Momecs/)__: multivariate analyses for multivariate data, notably morphometrics
+## Installation
+__Will come on top when ready__
 
-You can follow their development/status below:
+Once on CRAN, install the last released version of a package, say "MomX" with:
 
-Package     |  Lifecycle    |  Travis    |  CRAN      | Website
-------------|---------------|------------|------------| ---------------
-MomX        | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX) | [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX) | [MomX.github.io/MomX](http://momx.github.io/MomX)
-Momacs      | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs) | [![CRAN status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs) | [https://github.com/MomX/Momacs](https://github.com/MomX/Momacs)
-Momit      | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momit.svg?branch=master)](https://travis-ci.org/MomX/Momit) | [![CRAN status](https://www.r-pkg.org/badges/version/Momit)](https://cran.r-project.org/package=Momit) | [MomX.github.io/Momit](http://momx.github.io/Momit)
-Momocs      | [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing) | [![Travis-CI Build Status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs) | [![CRAN Status Badge](http://www.r-pkg.org/badges/version/Momocs)](http://cran.r-project.org/package=Momocs) | [MomX.github.io/Momocs](http://momx.github.io/Momocs)
-Momecs      | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momecs.svg?branch=master)](https://travis-ci.org/MomX/Momecs) | [![CRAN status](https://www.r-pkg.org/badges/version/Momecs)](https://cran.r-project.org/package=Momecs) | [MomX.github.io/Momecs](http://momx.github.io/Momecs)
-
-Other protypic MomX packages follows:
-
-Package     |  Lifecycle    |  Travis    |  CRAN      | Website
-------------|---------------|------------|------------| ---------------
-Momfarm     | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)  | [![Travis build status](https://travis-ci.org/MomX/Momfarm.svg?branch=master)](https://travis-ci.org/MomX/Momfarm) | [![CRAN status](https://www.r-pkg.org/badges/version/Momfarm)](https://cran.r-project.org/package=Momfarm) | [MomX.github.io/Momfarm](http://momx.github.io/Momfarm)
-Momoshop    |  [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)  | soon | soon | soon 
-
-### Installation
-The (future) released version will be installable from [CRAN](https://CRAN.R-project.org/package=MomX ) with:
-
-```{r cran-installation, eval = FALSE}
+``` r
 install.packages("MomX")
 ```
 
-But, so far, and for all MomX packages, I strongly recommend (and typically only support) using the development version that can be installed from GitHub with:
-```{r gh-installation, eval = FALSE}
+I will typically only support the very last development versions that you can get from [GitHub](https://github.com/) with:
+
+``` r
 # install.packages("devtools")
 devtools::install_github("MomX/MomX")
 ```
 
-Then, all MomX packages (only Momocs so far) will be loadable with a single call to:
+Then you will need to laod it with :
 
-```{r attach, eval=TRUE}
+```{r, eval=FALSE}
 library(MomX)
 ```
 
-MomX packages can be attached, detached, updated from CRAN, updated from [GitHub](http://github.com/MomX) with:
-```{r update, eval=FALSE}
-MomX_attach()        # equivalent to: library(MomX)
-MomX_detach()
-MomX_update_cran()
-MomX_update_github()
-```
+You can install and use packages separetely (eg with `install.packages("Momocs")`. `MomX` package will install all MomX packages, and help update them.
+
+## How to help
+I'm much than welcoming contributions to MomX ! Good news is that whatever your skills, you can contribute a bit.
+
+You can :
+
+* Signal a bug : fill an issue with __bug__ label
+* Code, improve, develop, discuss, request new features : fill an issue with __discuss__
+* Improve examples, and my English : _edit pages_
+
+## How to get help
+I do not have time either, so before asking for help, please :
+
+* Make sure you have the very last versions of packages : `MomX::MomX_update`
+* Start reading the vignettes, they are a good place to start
+* Read the reference manual, understand examples
+* Go to walk for 2 hours in the forest
+* Show us what you have tried and make a [reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
+
+Then, if you think something is wrong with :
+
+* is wrong with MomX : fill an issue with __bug__
+* is wrong with you, your data, or something local, fill an issue tagged with __help__
+
+Feel free to ring my bell `<bonhomme.vincent@gmail.com>` if :
+
+* You would like to collaborate with me
+* You would like to get trained in R and/or MomX
+* Any other sensible reason
+
+Happy MomX-ing !
+
+
+<!--
+
+
+### Advances
+This repos will report advances on MomX development.
+
+
+| Package                                                      | Family        | Description                                  | Lifecycle                                                                                                                         | Passing                                                                                                              | CRAN                                                                                                         |
+|--------------------------------------------------------------|---------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| :camera:[Momoshop](https://github.com/MomX/Momoshop)         | acquisition   | images post-processing                       | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)     | [![CRAN status](https://www.r-pkg.org/badges/version/Momoshop)](https://cran.r-project.org/package=Momoshop) |
+| :round_pushpin:[Momacs](https://github.com/MomX/Momoshop)    | acquisition   | interactive acquisition from images          | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop) | [![CRAN status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs)     |
+| :vulcan_salute:[Momit](https://github.com/MomX/Momit)        | acquisition   | import from images and foreign file format   | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momit.svg?branch=master)](https://travis-ci.org/MomX/Momit)       | [![CRAN status](https://www.r-pkg.org/badges/version/Momit)](https://cran.r-project.org/package=Momit)       |
+| :dove:[Momocs](https://github.com/MomX/Momocs)               | morphometrics | shape manipulation and morphometrics         | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)     | [![CRAN status](https://www.r-pkg.org/badges/version/Momocs)](https://cran.r-project.org/package=Momocs)     |
+| :eagle:[Momstats](https://github.com/MomX/Momstats)          | morphometrics | statistical analyses of morphometric data    | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momstats.svg?branch=master)](https://travis-ci.org/MomX/Momstats) | [![CRAN status](https://www.r-pkg.org/badges/version/Momstats)](https://cran.r-project.org/package=Momstats) |
+| :hatching_chick:[Momclick](https://github.com/MomX/Momclick) | morphometrics | the two previous, made interactive           | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momclick.svg?branch=master)](https://travis-ci.org/MomX/Momclick) | [![CRAN status](https://www.r-pkg.org/badges/version/Momclick)](https://cran.r-project.org/package=Momclick) |
+| :ring:[MomX](https://github.com/MomX/MomX)                   | meta          | to install, reinstall, load some or them all | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX)         | [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)         |
+| :blue_book:[Mombook](https://github.com/MomX/Mombook)        | meta          | a book collating all vignettes               | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | _no CI_                                                                                                              | _not for CRAN_                                                                                               |
+| :package:[Momdata](https://github.com/MomX/Momdata)          | meta          | a data package                               | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momdata.svg?branch=master)](https://travis-ci.org/MomX/Momdata)   | _not for CRAN_                                                                                               |
+|                                                              |               |                                              |                                                                                                                                   |                                                                                                                      |                                                                                                              |
+
+-->
+
+<!--
+### Packages
+
+#### :dove: [Momocs](https://github.com/MomX/Momocs): shape manipulation and morphometrics
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momocs)](https://cran.r-project.org/package=Momocs) 
+
+[![Travis build status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)
+
+#### :camera: [Momoshop](https://github.com/MomX/Momoshop) : images post-processing 
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momoshop)](https://cran.r-project.org/package=Momoshop)
+
+[![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)
+
+#### :round_pushpin: [Momacs](https://github.com/MomX/Momoshop) : interactive acquisition from images
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs)
+
+[![Travis build status](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop)
+
+
+
+
+### General philosophy
+* MomX aims to be a complete and user-friendly ecosystem for morphometrics
+* Compartiment key processes into well-defined, interoperable packages that go together well.
+* Each package should solve a single task, and do it well. Make it work, document, release, improve, repeat.
+
+MomX embraces and owns much to the [tidy manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html). MomX kind of theorise the programming side of morphometrics, or at least itself (yes, infinite loop). Tibbles are the answer.
+
+MomX packages share :
+* Companion website built by [pkg::pkgdown]
+* Continous integration with [Travis](travis-ci.org/)
+* Continuous testing with [pkg::testthat] and [codecov](https://codecov.io)
+
+###
+
+
+### How to help
+I'm much than welcoming contributions to MomX ! Good news is that whatever your skills, you can contribute a bit.
+
+You can :
+
+* Signal a bug 
+* Discuss or request a feature
+* Code, improve, develop new features
+* Improve examples, and my English
+* Share datasets
+
+### How to get helped
+* Vignettes are a good place to start
+* Read the reference manual, understand examples
+* Go to walk for 2 hours in the forest
+
+Then, if you think something :
+
+* is wrong with Momocs, fill an issue with __bug__
+* is wrong with you, your data, or something local, fill an issue tagged with __help__
+* would be fantastic, fill an issue with __request__
+
+...
+
+
+
+| Package | Lifecycle                                                                                                                         | Travis                                                                                                              | CRAN                                                                                                         | Website                                               |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
+| MomX    | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX)        | [![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)         | [MomX.github.io/MomX](http://momx.github.io/MomX)     |
+| Momacs  | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)    | [![CRAN status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs)     | <https://github.com/MomX/Momacs>                      |
+| Momit   | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momit.svg?branch=master)](https://travis-ci.org/MomX/Momit)      | [![CRAN status](https://www.r-pkg.org/badges/version/Momit)](https://cran.r-project.org/package=Momit)       | [MomX.github.io/Momit](http://momx.github.io/Momit)   |
+| Momocs  | [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)           | [![Travis-CI Build Status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs) | [![CRAN Status Badge](http://www.r-pkg.org/badges/version/Momocs)](http://cran.r-project.org/package=Momocs) | [MomX.github.io/Momocs](http://momx.github.io/Momocs) |
+| Momecs  | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momecs.svg?branch=master)](https://travis-ci.org/MomX/Momecs)    | [![CRAN status](https://www.r-pkg.org/badges/version/Momecs)](https://cran.r-project.org/package=Momecs)     | [MomX.github.io/Momecs](http://momx.github.io/Momecs) |
+
+Other protypic MomX packages
+follows:
+
+| Package  | Lifecycle                                                                                                                         | Travis                                                                                                             | CRAN                                                                                                       | Website                                                 |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| Momfarm  | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momfarm.svg?branch=master)](https://travis-ci.org/MomX/Momfarm) | [![CRAN status](https://www.r-pkg.org/badges/version/Momfarm)](https://cran.r-project.org/package=Momfarm) | [MomX.github.io/Momfarm](http://momx.github.io/Momfarm) |
+| Momoshop | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | soon                                                                                                               | soon                                                                                                       | soon                                                    |
+

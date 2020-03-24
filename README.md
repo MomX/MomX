@@ -1,17 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-## MomX
+# MomX
 
 *Part of [MomX](https://momx.github.io/MomX/)*
 
-<!--
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX)
-[![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)
--->
+<!-- badges: start -->
 
-### Rationale
+<!-- badges: end -->
+
 MomX is an ecosystem of R packages for everything 2D morphometrics, that
 is the statistical description of shape and its (co)variation. It is
 intended to provide a complete, comfortable, powerful, and - last but
@@ -21,10 +18,185 @@ MomX packages share common principles and work together well. This
 architecture is largely inspired by the
 [tidyverse](https://tidyverse.org).
 
+Planned schedule is :
+
+1.  Finish rewriting Momocs, release
+2.  Port old Momocs stats to Momcalc, release
+3.  Finish Momit, release
+4.  Finish MomX, release
+5.  Finish Momacs and Momoshop, release
+
+## Packages
+
+### Acquisition
+
+#### 🖖 Momit
+
+Import from various image and foreing file format and defines a portable
+format for morphometrics data
+
+#### 🛠 Momacs
+
+Interactively acquire morphometrics data from images, eg defining
+landmarks, curves, and other regions of interest.
+
+#### 📷 Momoshop
+
+Post-processes images, eg adjust contrast, pick channels, remove
+background, etc.
+
+### Morphometrics
+
+#### 🕊 [Momocs](https://github.com/MomX/Momocs)
+
+Manipulating shapes and turning them into coefficients using
+morphometrics
+methods.
+
+[![](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)
+[![](http://cranlogs.r-pkg.org/badges/last-month/MomX/Momocs?color=green)](https://cran.r-project.org/package=MomX/Momocs)
+[![](https://www.r-pkg.org/badges/version/MomX/Momocs?color=green)](https://cran.r-project.org/package=MomX/Momocs)
+[![CRAN
+checks](https://cranchecks.info/badges/summary/MomX/Momocs)](https://cran.r-project.org/web/checks/check_results_MomX/Momocs.html)
+
+#### 🧮 Momcalc
+
+Wraps sensible statistics methods for morphometrics in a consistent
+grammar
+
+#### 🔮 Momex
+
+Is the shiny child of Momocs +
+Momecs
+
+### Meta
+
+#### 💍 **MomX** helps install and update MomX packages
+
+#### 📚 **Mombook** compiles all package documentation into a practical book for MomX
+
+#### 🚯 **MomXiv** aims at archiving and share morphometrics data
+
+<!--
+[![CRAN status](https://www.r-pkg.org/badges/version/Momocs)](https://cran.r-project.org/package=Momocs) 
+
+[![Travis build status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)
+
+
+#### :camera: [Momoshop](https://github.com/MomX/Momoshop) : images post-processing 
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momoshop)](https://cran.r-project.org/package=Momoshop)
+
+[![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)
+
+#### :round_pushpin: [Momacs](https://github.com/MomX/Momoshop) : interactive acquisition from images
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs)
+
+[![Travis build status](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop)
+
+
+<!--
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build status](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX)
+[![CRAN status](https://www.r-pkg.org/badges/version/MomX)](https://cran.r-project.org/package=MomX)
+-->
+
+## General philosophy
+
+  - MomX aims to be a complete and user-friendly ecosystem for
+    morphometrics
+  - Compartiment key processes into well-defined, interoperable packages
+    that go together well.
+  - Each package should solve a single task, and do it well. Make it
+    work, document, release, improve, repeat.
+
+MomX embraces and owns much to the [tidy
+manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html).
+MomX kind of theorise the programming side of morphometrics, or at least
+itself (yes, infinite loop). Tibbles are the answer.
+
+MomX packages share :
+
+  - Continous integration with [Travis](travis-ci.org/)
+  - Continuous testing with \[pkg::testthat\] and
+    [codecov](https://codecov.io)
+  - Companion website built by \[pkg::pkgdown\], at url:
+    `MomX.github.io/packagename`
+  - Cheatsheets to decorate your bathroom walls
+
+## Installation
+
+**Will come on top when ready**
+
+Once on CRAN, install the last released version of a package, say “MomX”
+with:
+
+``` r
+install.packages("MomX")
+```
+
+I will typically only support the very last development versions that
+you can get from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("MomX/MomX")
+```
+
+Then you will need to laod it with :
+
+``` r
+library(MomX)
+```
+
+You can install and use packages separetely (eg with
+`install.packages("Momocs")`. `MomX` package will install all MomX
+packages, and help update them.
+
+## How to help
+
+I’m much than welcoming contributions to MomX \! Good news is that
+whatever your skills, you can contribute a bit.
+
+You can :
+
+  - Signal a bug : fill an issue with **bug** label
+  - Code, improve, develop, discuss, request new features : fill an
+    issue with **discuss**
+  - Improve examples, and my English : *edit pages*
+
+## How to get help
+
+I do not have time either, so before asking for help, please :
+
+  - Make sure you have the very last versions of packages :
+    `MomX::MomX_update`
+  - Start reading the vignettes, they are a good place to start
+  - Read the reference manual, understand examples
+  - Go to walk for 2 hours in the forest
+  - Show us what you have tried and make a [reproducible
+    example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
+
+Then, if you think something is wrong with :
+
+  - is wrong with MomX : fill an issue with **bug**
+  - is wrong with you, your data, or something local, fill an issue
+    tagged with **help**
+
+Feel free to ring my bell `<bonhomme.vincent@gmail.com>` if :
+
+  - You would like to collaborate with me
+  - You would like to get trained in R and/or MomX
+  - Any other sensible reason
+
+Happy MomX-ing \!
+
+<!--
+
+
 ### Advances
 This repos will report advances on MomX development.
 
-<!--
+
 | Package                                                      | Family        | Description                                  | Lifecycle                                                                                                                         | Passing                                                                                                              | CRAN                                                                                                         |
 |--------------------------------------------------------------|---------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | :camera:[Momoshop](https://github.com/MomX/Momoshop)         | acquisition   | images post-processing                       | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)     | [![CRAN status](https://www.r-pkg.org/badges/version/Momoshop)](https://cran.r-project.org/package=Momoshop) |
@@ -39,82 +211,85 @@ This repos will report advances on MomX development.
 |                                                              |               |                                              |                                                                                                                                   |                                                                                                                      |                                                                                                              |
 
 -->
-### Packages
+
+\<\!– \#\#\#
+Packages
 
 #### :dove: [Momocs](https://github.com/MomX/Momocs): shape manipulation and morphometrics
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momocs)](https://cran.r-project.org/package=Momocs) 
 
-[![Travis build status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/Momocs)](https://cran.r-project.org/package=Momocs)
 
-#### :camera: [Momoshop](https://github.com/MomX/Momoshop) : images post-processing 
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momoshop)](https://cran.r-project.org/package=Momoshop)
+[![Travis build
+status](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)
 
-[![Travis build status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)
+#### :camera: [Momoshop](https://github.com/MomX/Momoshop) : images post-processing
 
-#### :round_pushpin: [Momacs](https://github.com/MomX/Momoshop) : interactive acquisition from images
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![CRAN status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/Momoshop)](https://cran.r-project.org/package=Momoshop)
 
-[![Travis build status](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop)
+[![Travis build
+status](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)
 
+#### :round\_pushpin: [Momacs](https://github.com/MomX/Momoshop) : interactive acquisition from images
 
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/Momacs)](https://cran.r-project.org/package=Momacs)
 
+[![Travis build
+status](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop)
 
 ### General philosophy
-* MomX aims to be a complete and user-friendly ecosystem for morphometrics
-* Compartiment key processes into well-defined, interoperable packages that go together well.
-* Each package should solve a single task, and do it well. Make it work, document, release, improve, repeat.
 
-MomX embraces and owns much to the [tidy manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html). MomX kind of theorise the programming side of morphometrics, or at least itself (yes, infinite loop). Tibbles are the answer.
+  - MomX aims to be a complete and user-friendly ecosystem for
+    morphometrics
+  - Compartiment key processes into well-defined, interoperable packages
+    that go together well.
+  - Each package should solve a single task, and do it well. Make it
+    work, document, release, improve, repeat.
 
-MomX packages share :
-* Companion website built by [pkg::pkgdown]
-* Continous integration with [Travis](travis-ci.org/)
-* Continuous testing with [pkg::testthat] and [codecov](https://codecov.io)
+MomX embraces and owns much to the [tidy
+manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html).
+MomX kind of theorise the programming side of morphometrics, or at least
+itself (yes, infinite loop). Tibbles are the answer.
 
-###
+MomX packages share : \* Companion website built by \[pkg::pkgdown\] \*
+Continous integration with [Travis](travis-ci.org/) \* Continuous
+testing with \[pkg::testthat\] and [codecov](https://codecov.io)
 
+### 
 
 ### How to help
-I'm much than welcoming contributions to MomX ! Good news is that whatever your skills, you can contribute a bit.
+
+I’m much than welcoming contributions to MomX \! Good news is that
+whatever your skills, you can contribute a bit.
 
 You can :
 
- * Signal a bug 
- * Discuss or request a feature
- * Code, improve, develop new features
- * Improve examples, and my English
- * Share datasets
+  - Signal a bug
+  - Discuss or request a feature
+  - Code, improve, develop new features
+  - Improve examples, and my English
+  - Share datasets
 
 ### How to get helped
-* Vignettes are a good place to start
-* Read the reference manual, understand examples
-* Go to walk for 2 hours in the forest
+
+  - Vignettes are a good place to start
+  - Read the reference manual, understand examples
+  - Go to walk for 2 hours in the forest
 
 Then, if you think something :
 
-* is wrong with Momocs, fill an issue with __bug__
-* is wrong with you, your data, or something local, fill an issue tagged with __help__
-* would be fantastic, fill an issue with __request__
+  - is wrong with Momocs, fill an issue with **bug**
+  - is wrong with you, your data, or something local, fill an issue
+    tagged with **help**
+  - would be fantastic, fill an issue with
+**request**
 
-...
-
-
-<!-- Core MomX currently includes:
-
-  - **[MomX](https://momx.github.io/MomX/)**: make it easy to
-    install/load/update all MomX packages
-  - **[Momacs](https://github.com/MomX/Momacs)**: acquisition of
-    morphometrics data
-  - **[Momit](http://momx.github.io/Momit/)**: morphometrics data
-    conversion and exchange
-  - **[Momocs](http://momx.github.io/Momocs/)**: the mothership of MomX,
-    complete 2D morphometrics toolbox from shapes and collections of
-    shapes
-  - **[Momecs](http://momx.github.io/Momecs/)**: multivariate analyses
-    for multivariate data, notably morphometrics
-
-You can follow their development/status
-below:
+…
 
 | Package | Lifecycle                                                                                                                         | Travis                                                                                                              | CRAN                                                                                                         | Website                                               |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
@@ -131,45 +306,3 @@ follows:
 | -------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
 | Momfarm  | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | [![Travis build status](https://travis-ci.org/MomX/Momfarm.svg?branch=master)](https://travis-ci.org/MomX/Momfarm) | [![CRAN status](https://www.r-pkg.org/badges/version/Momfarm)](https://cran.r-project.org/package=Momfarm) | [MomX.github.io/Momfarm](http://momx.github.io/Momfarm) |
 | Momoshop | [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) | soon                                                                                                               | soon                                                                                                       | soon                                                    |
-
-### Installation
-
-The (future) released version will be installable from
-[CRAN](https://CRAN.R-project.org/package=MomX) with:
-
-``` r
-install.packages("MomX")
-```
-
-But, so far, and for all MomX packages, I strongly recommend (and
-typically only support) using the development version that can be
-installed from GitHub with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("MomX/MomX")
-```
-
-Then, all MomX packages (only Momocs so far) will be loadable with a
-single call to:
-
-``` r
-library(MomX)
-#> ────────────────────────────────────────────  Attaching MomX packages  ─────────────────────────────────────────── 
-#> → Momocs     1.2.9.1      
-#> → Momecs     0.1.0    
-#> ──────────────────────────────────────────────────────── ✔ ───────────────────────────────────────────────────────
-```
-
-MomX packages can be attached, detached, updated from CRAN, updated from
-[GitHub](http://github.com/MomX) with:
-
-``` r
-MomX_attach()        # equivalent to: library(MomX)
-MomX_detach()
-MomX_update_cran()
-MomX_update_github()
-```
-
--->
-

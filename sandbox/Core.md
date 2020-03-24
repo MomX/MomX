@@ -3,16 +3,11 @@
 
 #### 🖖 Momit
 
-Import from various image and foreing file format and defines a portable
-format for morphometrics
-data
-
 ``` r
-cartridge("Momocs")
+cartridge("Momocs2")
 ```
 
-[![](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)
-[![](http://cranlogs.r-pkg.org/badges/last-month/MomX/Momocs?color=green)](https://cran.r-project.org/package=MomX/Momocs)
-[![](https://www.r-pkg.org/badges/version/MomX/Momocs?color=green)](https://cran.r-project.org/package=MomX/Momocs)
-[![CRAN
-checks](https://cranchecks.info/badges/summary/MomX/Momocs)](https://cran.r-project.org/web/checks/check_results_MomX/Momocs.html)
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![](https://travis-ci.org/MomX/Momocs2.svg?branch=master)](https://travis-ci.org/MomX/Momocs2)
+[![](https://codecov.io/gh/MomX/Momocs2/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momocs2)
+[![](https://www.r-pkg.org/badges/version/Momocs2?color=green)](https://cran.r-project.org/package=Momocs2)

@@ -14,31 +14,26 @@ knitr::opts_chunk$set(
 )
 ```
 
-
-#### `r emo::ji("vulcan_salute")` Momit
-
-Import from various image and foreing file format and defines a portable format for morphometrics data
-
 ```{r, echo=FALSE}
 library(magrittr)
-cartridge <- function(x){
+cartridge <- function(x, lifecycle="experimental"){
   repo <- paste0("MomX/", x)
   paste(
+    badger::badge_lifecycle(lifecycle),
     badger::badge_travis(repo),
-    badger::badge_cran_download(repo),
-    badger::badge_cran_release(repo, color = "green"),
-    badger::badge_cran_checks(repo),
+    badger::badge_codecov(repo),
+    # badger::badge_cran_download(repo),
+    badger::badge_cran_release(x, color = "green"),
+    # badger::badge_cran_checks(repo),
     sep=" "
   ) %>% cat()
 }
 ```
 
-```{r}
-cartridge("Momocs")
+#### `r emo::ji("vulcan_salute")` Momit
+
+```{r, results="asis"}
+cartridge("Momocs2")
 ```
-
-
-
-
 
 

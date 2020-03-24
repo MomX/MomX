@@ -28,7 +28,7 @@ architecture is largely inspired by the
 
 ### Acquisition
 
-#### 🖖 Momit
+#### 🖖 [Momit](https://github.com/MomX/Momit)
 
 Import from various image and foreing file format and defines a portable
 format for morphometrics
@@ -38,8 +38,9 @@ data
 [![](https://www.r-pkg.org/badges/version/Momit?color=green)](https://cran.r-project.org/package=Momit)
 [![](https://travis-ci.org/MomX/Momit.svg?branch=master)](https://travis-ci.org/MomX/Momit)
 [![](https://codecov.io/gh/MomX/Momit/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momit)
+\> [Momit website](https://momx.github.io/Momit)
 
-#### 🛠 Momacs
+#### 🛠 [Momacs](https://github.com/MomX/Momacs)
 
 Interactively acquire morphometrics data from images, eg defining
 landmarks, curves, and other regions of
@@ -49,8 +50,9 @@ interest.
 [![](https://www.r-pkg.org/badges/version/Momacs?color=green)](https://cran.r-project.org/package=Momacs)
 [![](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs)
 [![](https://codecov.io/gh/MomX/Momacs/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momacs)
+\> [Momacs website](https://momx.github.io/Momacs)
 
-#### 📷 Momoshop
+#### 📷 [Momoshop](https://github.com/MomX/Momoshop)
 
 Post-processes images, eg adjust contrast, pick channels, remove
 background,
@@ -60,6 +62,7 @@ etc.
 [![](https://www.r-pkg.org/badges/version/Momoshop?color=green)](https://cran.r-project.org/package=Momoshop)
 [![](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop)
 [![](https://codecov.io/gh/MomX/Momoshop/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momoshop)
+\> [Momoshop website](https://momx.github.io/Momoshop)
 
 ### Morphometrics
 
@@ -73,8 +76,9 @@ methods.
 [![](https://www.r-pkg.org/badges/version/Momocs?color=green)](https://cran.r-project.org/package=Momocs)
 [![](https://travis-ci.org/MomX/Momocs.svg?branch=master)](https://travis-ci.org/MomX/Momocs)
 [![](https://codecov.io/gh/MomX/Momocs/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momocs)
+\> [Momocs website](https://momx.github.io/Momocs)
 
-#### 🧮 Momcalc
+#### 🧮 Momcalc [Momcalc](https://github.com/MomX/Momcalc)
 
 Wraps sensible statistics methods for morphometrics in a consistent
 grammar
@@ -83,29 +87,39 @@ grammar
 [![](https://www.r-pkg.org/badges/version/Momcalc?color=green)](https://cran.r-project.org/package=Momcalc)
 [![](https://travis-ci.org/MomX/Momcalc.svg?branch=master)](https://travis-ci.org/MomX/Momcalc)
 [![](https://codecov.io/gh/MomX/Momcalc/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momcalc)
+\> [Momcalc website](https://momx.github.io/Momcalc)
 
-#### 🔮 Momex
+#### 🔮 [Momecs](https://github.com/MomX/Momecs)
 
 Is the shiny child of Momocs +
 Momecs
 
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![](https://www.r-pkg.org/badges/version/Momex?color=green)](https://cran.r-project.org/package=Momex)
-[![](https://travis-ci.org/MomX/Momex.svg?branch=master)](https://travis-ci.org/MomX/Momex)
-[![](https://codecov.io/gh/MomX/Momex/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momex)
+[![](https://www.r-pkg.org/badges/version/Momecs?color=green)](https://cran.r-project.org/package=Momecs)
+[![](https://travis-ci.org/MomX/Momecs.svg?branch=master)](https://travis-ci.org/MomX/Momecs)
+[![](https://codecov.io/gh/MomX/Momecs/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momecs)
+\> [Momecs website](https://momx.github.io/Momecs)
 
 ### Meta
 
-#### 💍 **MomX** helps install and update MomX packages
+#### 💍 [MomX](https://github.com/MomX/MomX)
+
+Install and manage all MomX
+packages
 
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![](https://www.r-pkg.org/badges/version/MomX?color=green)](https://cran.r-project.org/package=MomX)
 [![](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX)
 [![](https://codecov.io/gh/MomX/MomX/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/MomX)
+\> [MomX website](https://momx.github.io/MomX)
 
-#### 📚 **Mombook** compiles all package documentation into a practical book for MomX
+#### 📚 [Mombook](https://github.com/MomX/Momocs)
 
-#### 🚯 **MomXiv** aims at archiving and share morphometrics data
+Compiles all package documentation into a practical book for MomX
+
+#### 🚯 [MomXiv](https://github.com/MomX/MomXiv)
+
+Share and archive morphometrics data
 
 ## General philosophy
 
@@ -166,10 +180,10 @@ whatever your skills, you can contribute a bit.
 
 You can :
 
-  - Signal a bug : fill an issue with **bug** label
+  - Signal a bug : fill an issue with **bug** label :bug:
   - Code, improve, develop, discuss, request new features : fill an
-    issue with **discuss**
-  - Improve examples, and my English : *edit pages*
+    issue with **discuss** :wrench:
+  - Improve examples, and my English : *edit pages* :uk:
 
 ## How to get help
 
@@ -177,11 +191,13 @@ I do not have time either, so before asking for help, please :
 
   - Make sure you have the very last versions of packages :
     `MomX::MomX_update`
-  - Start reading the vignettes, they are a good place to start
-  - Read the reference manual, understand examples
-  - Go to walk for 2 hours in the forest
+  - Start reading the vignettes, they are a good place to start :books:
+  - Read the reference manual, understand examples :hatching\_chick:
+  - Go to walk for 2 hours in the forest :deciduous\_tree: :chipmunk:
+    :four\_leaf\_clover:, solves 95% of my problems
   - Show us what you have tried and make a [reproducible
     example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
+    :pill:
 
 Then, if you think something is wrong with :
 
@@ -195,7 +211,7 @@ Feel free to ring my bell `<bonhomme.vincent@gmail.com>` if :
   - You would like to get trained in R and/or MomX
   - Any other sensible reason
 
-Happy MomX-ing \!
+Happy MomX-ing :kissing\_heart: \!
 
 <!--
 

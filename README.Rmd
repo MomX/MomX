@@ -24,9 +24,8 @@ cartridge <- function(x, lifecycle="experimental"){
     # badger::badge_cran_download(repo),
     
     # badger::badge_cran_checks(repo),
-    "\n\n",
     paste0(
-      paste0(" > [", x, " website]("),
+      paste0("\n\n> [", x, " website]("),
       paste0("https://momx.github.io/", x, ")")
     ),
     sep=" "
@@ -35,7 +34,8 @@ cartridge <- function(x, lifecycle="experimental"){
 }
 ```
 
-# MomX
+## MomX
+
 *Part of [MomX](https://momx.github.io/MomX/)*
 
 **Pretty much none of what follows will be ready before end of April 2020 !!!**

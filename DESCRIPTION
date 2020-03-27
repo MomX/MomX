@@ -26,9 +26,9 @@ Suggests:
     rmarkdown (>= 1.7.4),
     pkgdown,
     covr,
-    Momocs2
+    Momit
 Remotes:  
-    MomX/Momocs2
+    MomX/Momit
 VignetteBuilder: knitr
 Encoding: UTF-8
 LazyData: true

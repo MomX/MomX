@@ -123,6 +123,18 @@ packages
 
 > [MomX website](https://momx.github.io/MomX)
 
+#### 🍭 [MomX](https://github.com/MomX/Momdata)
+
+Interesting datasets for
+MomX
+
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![](https://www.r-pkg.org/badges/version/Momdata?color=green)](https://cran.r-project.org/package=Momdata)
+[![](https://travis-ci.org/MomX/Momdata.svg?branch=master)](https://travis-ci.org/MomX/Momdata)
+[![](https://codecov.io/gh/MomX/Momdata/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momdata)
+
+> [Momdata website](https://momx.github.io/Momdata)
+
 #### 📚 [Mombook](https://github.com/MomX/Momocs)
 
 Compiles all package documentation into a practical book for MomX

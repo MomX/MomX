@@ -4,35 +4,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-collapse = TRUE,
-comment = "#>",
-fig.path = "man/figures/README-",
-out.width = "100%"
-)
-```
 
-```{r, echo=FALSE}
-cartridge <- function(x, lifecycle="experimental"){
-  repo <- paste0("MomX/", x)
-  out <- paste(
-    badger::badge_lifecycle(lifecycle),
-    badger::badge_cran_release(x, color = "green"),
-    badger::badge_travis(repo),
-    badger::badge_codecov(repo),
-    # badger::badge_cran_download(repo),
-    
-    # badger::badge_cran_checks(repo),
-    paste0(
-      paste0("\n\n> [", x, " website]("),
-      paste0("https://momx.github.io/", x, ")")
-    ),
-    sep=" "
-  )
-  cat(out)
-}
-```
+
+
 
 ## MomX
 
@@ -63,77 +37,77 @@ architecture is largely inspired by the
 ## Packages
 ### Acquisition
 
-#### `r emo::ji("vulcan_salute")` [Momit](https://github.com/MomX/Momit)
+#### 🖖 [Momit](https://github.com/MomX/Momit)
 
 Import from various image and foreing file format and defines a portable format for morphometrics data
 
-```{r, results="asis", echo=FALSE}
-cartridge("Momit")
-```
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![](https://www.r-pkg.org/badges/version/Momit?color=green)](https://cran.r-project.org/package=Momit) [![](https://travis-ci.org/MomX/Momit.svg?branch=master)](https://travis-ci.org/MomX/Momit) [![](https://codecov.io/gh/MomX/Momit/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momit) 
 
-#### `r emo::ji("hammer_and_wrench")` [Momacs](https://github.com/MomX/Momacs)
+> [Momit website](https://momx.github.io/Momit)
+
+#### 🛠 [Momacs](https://github.com/MomX/Momacs)
 
 Interactively acquire morphometrics data from images, eg defining landmarks, curves, and other regions of interest.
 
-```{r, results="asis", echo=FALSE}
-cartridge("Momacs")
-```
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![](https://www.r-pkg.org/badges/version/Momacs?color=green)](https://cran.r-project.org/package=Momacs) [![](https://travis-ci.org/MomX/Momacs.svg?branch=master)](https://travis-ci.org/MomX/Momacs) [![](https://codecov.io/gh/MomX/Momacs/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momacs) 
 
-#### `r emo::ji("camera")` [Momoshop](https://github.com/MomX/Momoshop)
+> [Momacs website](https://momx.github.io/Momacs)
+
+#### 📷 [Momoshop](https://github.com/MomX/Momoshop)
 
 Post-processes images, eg adjust contrast, pick channels, remove background, etc.
 
-```{r, results="asis", echo=FALSE}
-cartridge("Momoshop")
-```
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![](https://www.r-pkg.org/badges/version/Momoshop?color=green)](https://cran.r-project.org/package=Momoshop) [![](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop) [![](https://codecov.io/gh/MomX/Momoshop/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momoshop) 
+
+> [Momoshop website](https://momx.github.io/Momoshop)
 
 ### Morphometrics
-#### `r emo::ji("dove")` [Momocs](https://github.com/MomX/Momocs)
+#### 🕊 [Momocs](https://github.com/MomX/Momocs)
 
 Manipulating shapes and turning them into coefficients using morphometrics methods.
 
-```{r, results="asis", echo=FALSE}
-cartridge("Momocs2")
-```
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![](https://www.r-pkg.org/badges/version/Momocs2?color=green)](https://cran.r-project.org/package=Momocs2) [![](https://travis-ci.org/MomX/Momocs2.svg?branch=master)](https://travis-ci.org/MomX/Momocs2) [![](https://codecov.io/gh/MomX/Momocs2/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momocs2) 
+
+> [Momocs2 website](https://momx.github.io/Momocs2)
 
 
-#### `r emo::ji("abacus")` [Momcalc](https://github.com/MomX/Momcalc)
+#### 🧮 [Momcalc](https://github.com/MomX/Momcalc)
 
 Wraps sensible statistics methods for morphometrics in a consistent grammar
 
-```{r, results="asis", echo=FALSE}
-cartridge("Momcalc")
-```
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![](https://www.r-pkg.org/badges/version/Momcalc?color=green)](https://cran.r-project.org/package=Momcalc) [![](https://travis-ci.org/MomX/Momcalc.svg?branch=master)](https://travis-ci.org/MomX/Momcalc) [![](https://codecov.io/gh/MomX/Momcalc/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momcalc) 
 
-#### `r emo::ji("crystal")` [Momecs](https://github.com/MomX/Momecs)
+> [Momcalc website](https://momx.github.io/Momcalc)
+
+#### 🔮 [Momecs](https://github.com/MomX/Momecs)
 Is the shiny child of Momocs + Momecs
 
-```{r, results="asis", echo=FALSE}
-cartridge("Momecs")
-```
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![](https://www.r-pkg.org/badges/version/Momecs?color=green)](https://cran.r-project.org/package=Momecs) [![](https://travis-ci.org/MomX/Momecs.svg?branch=master)](https://travis-ci.org/MomX/Momecs) [![](https://codecov.io/gh/MomX/Momecs/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momecs) 
+
+> [Momecs website](https://momx.github.io/Momecs)
 
 ### Meta
-#### `r emo::ji("ring")` [MomX](https://github.com/MomX/MomX)
+#### 💍 [MomX](https://github.com/MomX/MomX)
 
 Install and manage all MomX packages
 
-```{r, results="asis", echo=FALSE}
-cartridge("MomX")
-```
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![](https://www.r-pkg.org/badges/version/MomX?color=green)](https://cran.r-project.org/package=MomX) [![](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX) [![](https://codecov.io/gh/MomX/MomX/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/MomX) 
 
-#### `r emo::ji("lollipop")` [MomX](https://github.com/MomX/Momdata)
+> [MomX website](https://momx.github.io/MomX)
+
+#### 🍭 [MomX](https://github.com/MomX/Momdata)
 
 Interesting datasets for MomX
 
-```{r, results="asis", echo=FALSE}
-cartridge("Momdata")
-```
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![](https://www.r-pkg.org/badges/version/Momdata?color=green)](https://cran.r-project.org/package=Momdata) [![](https://travis-ci.org/MomX/Momdata.svg?branch=master)](https://travis-ci.org/MomX/Momdata) [![](https://codecov.io/gh/MomX/Momdata/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momdata) 
 
-#### `r emo::ji("books")` [Mombook](https://github.com/MomX/Momocs)
+> [Momdata website](https://momx.github.io/Momdata)
+
+#### 📚 [Mombook](https://github.com/MomX/Momocs)
 
 Compiles all package documentation into a practical book for MomX
 
-#### `r emo::ji("do_not_litter")` [MomXiv](https://github.com/MomX/MomXiv)
+#### 🚯 [MomXiv](https://github.com/MomX/MomXiv)
 
 Share and archive morphometrics data
 
@@ -171,7 +145,8 @@ devtools::install_github("MomX/MomX")
 
 Then you will need to laod it with :
 
-```{r, eval=FALSE}
+
+```r
 library(MomX)
 ```
 

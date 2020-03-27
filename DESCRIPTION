@@ -24,6 +24,7 @@ Imports:
 Suggests: 
     knitr (>= 1.17),
     rmarkdown (>= 1.7.4),
+    pkgdown,
     covr,
     Momocs2
 Remotes:  

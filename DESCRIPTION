@@ -24,7 +24,10 @@ Imports:
 Suggests: 
     knitr (>= 1.17),
     rmarkdown (>= 1.7.4),
-    covr
+    covr,
+    Momocs2
+Remotes:  
+    MomX/Momocs2
 VignetteBuilder: knitr
 Encoding: UTF-8
 LazyData: true

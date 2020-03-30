@@ -24,13 +24,16 @@ architecture is largely inspired by the
 3.  Finish Momit, release (May 2020)
 4.  Finish MomX, release (May 2020)
 5.  Finish Momacs and Momoshop, release (June 2020)
-6.  Submit to [rOpenSci](https://ropensci.org/)
+6.  Submit to
+[rOpenSci](https://ropensci.org/)
 
 ## Packages
 
 ### Acquisition
 
 #### 🖖 [Momit](https://github.com/MomX/Momit)
+
+<a href='http://momx.github.io/Momit'><img src='https://github.com/MomX/Momit/blob/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Import from various image and foreing file format and defines a portable
 format for morphometrics
@@ -41,9 +44,12 @@ data
 [![](https://travis-ci.org/MomX/Momit.svg?branch=master)](https://travis-ci.org/MomX/Momit)
 [![](https://codecov.io/gh/MomX/Momit/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momit)
 
-> [Momit website](https://momx.github.io/Momit)
+> [Momit
+website](https://momx.github.io/Momit)
 
 #### 🛠 [Momacs](https://github.com/MomX/Momacs)
+
+<a href='http://momx.github.io/Momacs'><img src='https://github.com/MomX/Momacs/blob/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Interactively acquire morphometrics data from images, eg defining
 landmarks, curves, and other regions of
@@ -116,7 +122,7 @@ website](https://momx.github.io/Momecs)
 
 #### 💍 [MomX](https://github.com/MomX/MomX)
 
-<img src='https://github.com/MomX/MomX/blob/master/man/figures/logo.png' align="right" height="139" /></a>
+<a href='http://momx.github.io/MomX'><img src='https://github.com/MomX/MomX/blob/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Install and manage all MomX
 packages
@@ -126,9 +132,12 @@ packages
 [![](https://travis-ci.org/MomX/MomX.svg?branch=master)](https://travis-ci.org/MomX/MomX)
 [![](https://codecov.io/gh/MomX/MomX/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/MomX)
 
-> [MomX website](https://momx.github.io/MomX)
+> [MomX
+website](https://momx.github.io/MomX)
 
 #### 🍭 [MomX](https://github.com/MomX/Momdata)
+
+<a href='http://momx.github.io/Momdata'><img src='https://github.com/MomX/Momdata/blob/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Interesting datasets for
 MomX

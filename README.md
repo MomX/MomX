@@ -67,11 +67,14 @@ etc.
 [![](https://travis-ci.org/MomX/Momoshop.svg?branch=master)](https://travis-ci.org/MomX/Momoshop)
 [![](https://codecov.io/gh/MomX/Momoshop/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momoshop)
 
-> [Momoshop website](https://momx.github.io/Momoshop)
+> [Momoshop
+website](https://momx.github.io/Momoshop)
 
 ### Morphometrics
 
 #### 🕊 [Momocs](https://github.com/MomX/Momocs)
+
+<a href='http://momx.github.io/Momocs2'><img src='https://github.com/MomX/Momocs2/blob/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Manipulating shapes and turning them into coefficients using
 morphometrics
@@ -106,11 +109,14 @@ Momecs
 [![](https://travis-ci.org/MomX/Momecs.svg?branch=master)](https://travis-ci.org/MomX/Momecs)
 [![](https://codecov.io/gh/MomX/Momecs/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momecs)
 
-> [Momecs website](https://momx.github.io/Momecs)
+> [Momecs
+website](https://momx.github.io/Momecs)
 
 ### Meta
 
 #### 💍 [MomX](https://github.com/MomX/MomX)
+
+<img src='https://github.com/MomX/MomX/blob/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Install and manage all MomX
 packages

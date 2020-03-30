@@ -1,12 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-## MomX
+## MomX <a href='http://momx.github.io/MomX'><img src='man/figures/logo.png' align="right" height="139" /></a>
 
 *Part of [MomX](https://momx.github.io/MomX/)*
 
-**Pretty much none of what follows will be ready before end of April
-2020 \!\!\!**
+**None of what follows will be ready before end of April 2020 \!\!\!**
 
 MomX is an ecosystem of R packages for everything 2D morphometrics, that
 is the statistical description of shape and its (co)variation.

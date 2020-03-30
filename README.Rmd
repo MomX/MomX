@@ -102,16 +102,18 @@ cartridge("Momocs2")
 ```
 
 
-#### `r emo::ji("abacus")` [Momcalc](https://github.com/MomX/Momcalc)
+#### `r emo::ji("pill")` [Momstats](https://github.com/MomX/Momstats)
+
+<a href='http://momx.github.io/Momstats'><img src='https://github.com/MomX/Momstats/blob/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Wraps sensible statistics methods for morphometrics in a consistent grammar
 
 ```{r, results="asis", echo=FALSE}
-cartridge("Momcalc")
+cartridge("Momstats")
 ```
 
 #### `r emo::ji("crystal")` [Momecs](https://github.com/MomX/Momecs)
-Is the shiny child of Momocs + Momecs
+Is the shiny descent of Momocs x Momecs
 
 ```{r, results="asis", echo=FALSE}
 cartridge("Momecs")

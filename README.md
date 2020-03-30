@@ -91,23 +91,26 @@ methods.
 [![](https://travis-ci.org/MomX/Momocs2.svg?branch=master)](https://travis-ci.org/MomX/Momocs2)
 [![](https://codecov.io/gh/MomX/Momocs2/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momocs2)
 
-> [Momocs2 website](https://momx.github.io/Momocs2)
+> [Momocs2
+website](https://momx.github.io/Momocs2)
 
-#### 🧮 [Momcalc](https://github.com/MomX/Momcalc)
+#### 💊 [Momstats](https://github.com/MomX/Momstats)
+
+<a href='http://momx.github.io/Momstats'><img src='https://github.com/MomX/Momstats/blob/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Wraps sensible statistics methods for morphometrics in a consistent
 grammar
 
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![](https://www.r-pkg.org/badges/version/Momcalc?color=green)](https://cran.r-project.org/package=Momcalc)
-[![](https://travis-ci.org/MomX/Momcalc.svg?branch=master)](https://travis-ci.org/MomX/Momcalc)
-[![](https://codecov.io/gh/MomX/Momcalc/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momcalc)
+[![](https://www.r-pkg.org/badges/version/Momstats?color=green)](https://cran.r-project.org/package=Momstats)
+[![](https://travis-ci.org/MomX/Momstats.svg?branch=master)](https://travis-ci.org/MomX/Momstats)
+[![](https://codecov.io/gh/MomX/Momstats/branch/master/graph/badge.svg)](https://codecov.io/gh/MomX/Momstats)
 
-> [Momcalc website](https://momx.github.io/Momcalc)
+> [Momstats website](https://momx.github.io/Momstats)
 
 #### 🔮 [Momecs](https://github.com/MomX/Momecs)
 
-Is the shiny child of Momocs +
+Is the shiny descent of Momocs x
 Momecs
 
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)

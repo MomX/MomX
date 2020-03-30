@@ -33,7 +33,7 @@ architecture is largely inspired by the
 
 #### 🖖 [Momit](https://github.com/MomX/Momit)
 
-<a href='http://momx.github.io/Momit'><img src='https://github.com/MomX/Momit/blob/master/man/figures/logo.png' align="right" height="139" /></a>
+<a href='http://momx.github.io/Momit'><img src='https://raw.githubusercontent.com/MomX/Momit/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Import from various image and foreing file format and defines a portable
 format for morphometrics
@@ -49,7 +49,7 @@ website](https://momx.github.io/Momit)
 
 #### 🛠 [Momacs](https://github.com/MomX/Momacs)
 
-<a href='http://momx.github.io/Momacs'><img src='https://github.com/MomX/Momacs/blob/master/man/figures/logo.png' align="right" height="139" /></a>
+<a href='http://momx.github.io/Momacs'><img src='https://raw.githubusercontent.com/MomX/Momacs/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Interactively acquire morphometrics data from images, eg defining
 landmarks, curves, and other regions of
@@ -80,7 +80,7 @@ website](https://momx.github.io/Momoshop)
 
 #### 🕊 [Momocs](https://github.com/MomX/Momocs)
 
-<a href='http://momx.github.io/Momocs2'><img src='https://github.com/MomX/Momocs2/blob/master/man/figures/logo.png' align="right" height="139" /></a>
+<a href='http://momx.github.io/Momocs2'><img src='https://raw.githubusercontent.com/MomX/Momocs2/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Manipulating shapes and turning them into coefficients using
 morphometrics
@@ -96,7 +96,7 @@ website](https://momx.github.io/Momocs2)
 
 #### 💊 [Momstats](https://github.com/MomX/Momstats)
 
-<a href='http://momx.github.io/Momstats'><img src='https://github.com/MomX/Momstats/blob/master/man/figures/logo.png' align="right" height="139" /></a>
+<a href='http://momx.github.io/Momstats'><img src='https://raw.githubusercontent.com/MomX/Momstats/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Wraps sensible statistics methods for morphometrics in a consistent
 grammar
@@ -125,7 +125,7 @@ website](https://momx.github.io/Momecs)
 
 #### 💍 [MomX](https://github.com/MomX/MomX)
 
-<a href='http://momx.github.io/MomX'><img src='https://github.com/MomX/MomX/blob/master/man/figures/logo.png' align="right" height="139" /></a>
+<a href='http://momx.github.io/MomX'><img src='https://raw.githubusercontent.com/MomX/MomX/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Install and manage all MomX
 packages
@@ -140,7 +140,7 @@ website](https://momx.github.io/MomX)
 
 #### 🍭 [MomX](https://github.com/MomX/Momdata)
 
-<a href='http://momx.github.io/Momdata'><img src='https://github.com/MomX/Momdata/blob/master/man/figures/logo.png' align="right" height="139" /></a>
+<a href='http://momx.github.io/Momdata'><img src='https://raw.githubusercontent.com/MomX/Momdata/master/man/figures/logo.png' align="right" height="139" /></a>
 
 Interesting datasets for
 MomX

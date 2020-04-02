@@ -1,0 +1,21 @@
+---
+title: "Help"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Help}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+You're in trouble and you want some help?
+
+Before ...
+
+Then ring my bell

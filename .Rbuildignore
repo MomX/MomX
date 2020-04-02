@@ -9,3 +9,4 @@
 _pkgdown.yaml
 ^_pkgdown\.yml$
 ^codecov\.yml$
+sandbox

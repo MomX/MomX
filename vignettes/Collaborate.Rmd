@@ -1,0 +1,17 @@
+---
+title: "Collaborate"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Collaborate}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+We should share a common place, eg dropbox, drive or github

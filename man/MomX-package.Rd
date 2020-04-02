@@ -6,6 +6,8 @@
 \alias{MomX-package}
 \title{MomX: Easily Install, Update and Load MomX packages}
 \description{
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
 MomX is an ecosystem of packages for 
     everything 2D morphometrics, that is the statistical description
     of shape and its (co)variation, from data acquisition, translation, 

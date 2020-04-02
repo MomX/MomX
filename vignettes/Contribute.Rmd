@@ -1,0 +1,27 @@
+---
+title: "Contribute"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Contribute}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+You can : (list but add how to)
+
+* report bugs
+* request features
+* improve examples
+* share data
+* review my English
+* add code 
+
+
+

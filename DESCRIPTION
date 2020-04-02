@@ -26,9 +26,17 @@ Suggests:
     rmarkdown (>= 1.7.4),
     pkgdown,
     covr,
-    Momit
+    Momit,
+    Momacs,
+    Momocs2,
+    Momstats,
+    Momdata
 Remotes:  
     MomX/Momit
+    MomX/Momacs,
+    MomX/Momocs2,
+    MomX/Momstats,
+    MomX/Momdata
 VignetteBuilder: knitr
 Encoding: UTF-8
 LazyData: true

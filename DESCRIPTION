@@ -32,7 +32,7 @@ Suggests:
     Momstats,
     Momdata
 Remotes:  
-    MomX/Momit
+    MomX/Momit,
     MomX/Momacs,
     MomX/Momocs2,
     MomX/Momstats,

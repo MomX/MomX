@@ -22,17 +22,3 @@ deploy:
   local-dir: docs
   on:
     branch: master
-
-# matrix:
-#   include:
-#     - r: release
-#       env: R_CODECOV=true
-#       before_cache: Rscript -e 'remotes::install_github("r-lib/pkgdown@fix/examples-dontshow")'
-#       deploy:
-#         provider: script
-#         script: Rscript -e 'pkgdown::deploy_site_github()'
-#         skip_cleanup: true
-#         on:
-#           all_branches: true
-#           condition: '"$TRAVIS_BRANCH" == "gh-pages" || -n "$TRAVIS_TAG"'
-# end yml

@@ -4,11 +4,15 @@ language: R
 cache: packages
 r: bioc-release
 
+warnings_are_errors: false
+
 addons:
   apt:
     packages:
       - libudunits2-dev
       - libmagick++-dev
+    sources:
+      - ubuntu-toolchain-r-test
 
 after_success:
   - Rscript -e 'covr::codecov()'

@@ -6,6 +6,13 @@ r: bioc-release
 
 warnings_are_errors: false
 
+r_github_packages:
+  - MomX/Momit
+  - MomX/Momacs
+  - MomX/Momocs2
+  - MomX/Momdata
+  - MomX/Momstats
+
 addons:
   apt:
     packages:

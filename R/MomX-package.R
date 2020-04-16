@@ -3,7 +3,8 @@
 #' @keywords internal
 "_PACKAGE"
 
-core <- c("Momit", "Momstats", "Momocs2", "Momacs", "Momdata")
+# core <- c("Momit", "Momstats", "Momocs2", "Momacs", "Momdata")
+core <- c("Momit", "Momocs2")
 
 .onAttach <- function(libname, pkgname) {
   MomX_attach()

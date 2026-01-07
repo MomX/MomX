@@ -1,5 +1,5 @@
-# Simpler pkgdown workflow without pak lockfile
-# Place this in .github/workflows/pkgdown.yaml
+# Alternative: Even simpler pkgdown workflow
+# This uses pkgdown's built-in installation
 
 name: pkgdown
 
@@ -27,7 +27,6 @@ jobs:
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      R_REMOTES_STANDALONE: true
 
     steps:
       - uses: actions/checkout@v4
@@ -44,7 +43,7 @@ jobs:
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
 
-      - name: Install MomX ecosystem packages
+      - name: Install MomX packages (optional)
         continue-on-error: true
         run: |
           pkgs <- c("Momocs2", "Momacs", "Momoshop", "Momdata", "Momstats")
@@ -56,11 +55,13 @@ jobs:
           }
         shell: Rscript {0}
 
-      - name: Build pkgdown site
-        run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
+      - name: Build and deploy site
+        run: |
+          # This automatically installs the package before building
+          pkgdown::build_site_github_pages(new_process = FALSE, install = TRUE)
         shell: Rscript {0}
 
-      - name: Upload to GitHub Pages
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs

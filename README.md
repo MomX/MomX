@@ -1,7 +1,5 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# MomX
+# MomX <a href="https://momx.github.io/MomX/"><img src="man/figures/logo.png" align="right" height="139" alt="MomX website" /></a>
 
 <!-- badges: start -->
 

@@ -27,6 +27,8 @@ Suggests:
     Momocs2,
     Momacs,
     Momoshop,
+    Momdata,
+    Momstats,
     knitr,
     rmarkdown,
     testthat

@@ -1,6 +1,3 @@
-# Alternative GitHub Actions Workflow (Simpler, No Lockfile)
-# This avoids the pak lockfile issue entirely
-# Place this in .github/workflows/R-CMD-check.yaml
 
 name: R-CMD-check
 
@@ -22,13 +19,12 @@ jobs:
         config:
           - {os: macos-latest,   r: 'release'}
           - {os: windows-latest, r: 'release'}
-          - {os: ubuntu-latest,   r: 'release'}
+          - {os: ubuntu-latest,  r: 'release'}
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_KEEP_PKG_SOURCE: yes
-      # Disable pak's dependency resolution for Suggests
-      R_REMOTES_STANDALONE: true
+      _R_CHECK_FORCE_SUGGESTS_: false
 
     steps:
       - uses: actions/checkout@v4
@@ -40,54 +36,82 @@ jobs:
           r-version: ${{ matrix.config.r }}
           use-public-rspm: true
 
-      # Install only the hard dependencies (Imports, Depends, LinkingTo)
       - name: Install system dependencies
         if: runner.os == 'Linux'
         run: |
           sudo apt-get update
-          sudo apt-get install -y libcurl4-openssl-dev
+          sudo apt-get install -y libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev
 
       - name: Install R dependencies
         run: |
           # Install remotes first
           install.packages("remotes")
 
-          # Install only hard dependencies (not Suggests)
-          remotes::install_deps(dependencies = NA)
+          # Install hard dependencies (Imports, Depends, LinkingTo)
+          remotes::install_deps(dependencies = TRUE)
 
           # Install packages needed for checking
-          install.packages(c("rcmdcheck", "roxygen2", "devtools"))
+          install.packages(c("rcmdcheck", "roxygen2"))
         shell: Rscript {0}
 
-      # Optional: Try to install MomX core packages if they exist
-      - name: Try installing MomX core packages (optional)
-        continue-on-error: true
+      - name: Install MomX Suggests packages from GitHub
         run: |
-          packages <- c("Momocs2", "Momacs", "Momoshop")
+          # List of MomX packages in Suggests
+          momx_packages <- c("Momocs2", "Momacs", "Momoshop", "Momdata", "Momstats")
 
-          for (pkg in packages) {
+          cat("\n=== Installing MomX Suggests packages ===\n")
+
+          for (pkg in momx_packages) {
+            # Check if already available (e.g., on CRAN)
+            if (requireNamespace(pkg, quietly = TRUE)) {
+              cat(sprintf("✓ %s already installed\n", pkg))
+              next
+            }
+
+            # Try to install from GitHub
             tryCatch({
-              cat(sprintf("\nTrying to install MomX/%s...\n", pkg))
+              cat(sprintf("\nInstalling MomX/%s from GitHub...\n", pkg))
               remotes::install_github(
                 sprintf("MomX/%s", pkg),
                 upgrade = "never",
-                force = FALSE
+                force = FALSE,
+                quiet = FALSE
               )
               cat(sprintf("✓ Successfully installed %s\n", pkg))
             }, error = function(e) {
-              cat(sprintf("✗ Could not install %s (this is expected if it doesn't exist yet)\n", pkg))
+              cat(sprintf("✗ Could not install %s: %s\n", pkg, e$message))
+              cat(sprintf("  (This is OK if %s doesn't exist yet)\n", pkg))
             })
+          }
+
+          cat("\n=== Installation summary ===\n")
+          installed <- sapply(momx_packages, requireNamespace, quietly = TRUE)
+          cat(sprintf("Installed: %d / %d packages\n", sum(installed), length(momx_packages)))
+          if (sum(installed) > 0) {
+            cat("Available packages:\n")
+            cat(paste0("  - ", names(installed)[installed], "\n"))
           }
         shell: Rscript {0}
 
       - name: Check package
+        env:
+          _R_CHECK_CRAN_INCOMING_: false
+          _R_CHECK_FORCE_SUGGESTS_: false
         run: |
+          options(crayon.enabled = TRUE)
           rcmdcheck::rcmdcheck(
             args = c("--no-manual", "--as-cran"),
             error_on = "warning",
             check_dir = "check"
           )
         shell: Rscript {0}
+
+      - name: Show testthat output
+        if: always()
+        run: |
+          ## --------------------------------------------------------------------
+          find ${{ runner.temp }}/package -name 'testthat.Rout*' -exec cat '{}' \; || true
+        shell: bash
 
       - name: Upload check results
         if: failure()

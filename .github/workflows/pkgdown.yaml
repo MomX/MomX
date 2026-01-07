@@ -1,27 +1,34 @@
-# Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
-# Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
+# Simpler pkgdown workflow without pak lockfile
+# Place this in .github/workflows/pkgdown.yaml
+
+name: pkgdown
+
 on:
   push:
     branches: [main, master]
   pull_request:
+    branches: [main, master]
   release:
     types: [published]
   workflow_dispatch:
 
-name: pkgdown.yaml
-
-permissions: read-all
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   pkgdown:
     runs-on: ubuntu-latest
-    # Only restrict concurrency for non-PR jobs
-    concurrency:
-      group: pkgdown-${{ github.event_name != 'pull_request' || github.run_id }}
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-    permissions:
-      contents: write
+      R_REMOTES_STANDALONE: true
+
     steps:
       - uses: actions/checkout@v4
 
@@ -31,19 +38,34 @@ jobs:
         with:
           use-public-rspm: true
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: any::pkgdown, local::.
-          needs: website
+      - name: Install dependencies
+        run: |
+          install.packages(c("remotes", "pkgdown", "devtools"))
+          remotes::install_deps(dependencies = TRUE)
+        shell: Rscript {0}
 
-      - name: Build site
+      - name: Install MomX ecosystem packages
+        continue-on-error: true
+        run: |
+          pkgs <- c("Momocs2", "Momacs", "Momoshop", "Momdata", "Momstats")
+          for (pkg in pkgs) {
+            tryCatch(
+              remotes::install_github(paste0("MomX/", pkg), upgrade = "never"),
+              error = function(e) invisible()
+            )
+          }
+        shell: Rscript {0}
+
+      - name: Build pkgdown site
         run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
         shell: Rscript {0}
 
-      - name: Deploy to GitHub pages 🚀
-        if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
+      - name: Upload to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
         with:
-          clean: false
-          branch: gh-pages
-          folder: docs
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        if: github.event_name != 'pull_request'
+        uses: actions/deploy-pages@v4

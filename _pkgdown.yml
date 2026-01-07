@@ -33,15 +33,9 @@ navbar:
       - text: -------
       - text: Extended Packages
       - text: MomData
-        href: https://momx.github.io/MomData/
+        href: https://momx.github.io/Momdata/
       - text: MomStats
-        href: https://momx.github.io/MomStats/
-      - text: MomViz
-        href: https://momx.github.io/MomViz/
-      - text: MomBot
-        href: https://momx.github.io/MomBot/
-      - text: MomArch
-        href: https://momx.github.io/MomArch/
+        href: https://momx.github.io/Momdtats/
 
 reference:
 - title: Package installation
@@ -64,14 +58,3 @@ reference:
   - momx_website
   - momx_repo
 
-articles:
-- title: Getting Started
-  navbar: ~
-  contents:
-  - getting-started
-  - philosophy
-
-- title: Package Ecosystem
-  contents:
-  - core-packages
-  - extending-momx

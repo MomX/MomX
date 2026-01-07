@@ -10,10 +10,10 @@ template:
     danger: "#A6081A"
 
 home:
-  title: MomX • Modern Morphometrics for R
+  title: MomX • An open-source ecosystem for everything morphometrics
   links:
   - text: Main website
-    href: https://momx.github.io/MomX/
+    href: https://momx.github.io/MomX
 
 navbar:
   structure:
@@ -24,18 +24,29 @@ navbar:
       text: Ecosystem
       menu:
       - text: Core Packages
-      - text: Momocs2
-        href: https://momx.github.io/Momocs2/
+      - text: MomX
+        href: https://momx.github.io/MomX/
       - text: Momacs
         href: https://momx.github.io/Momacs/
-      - text: Momoshop
-        href: https://momx.github.io/Momoshop/
+      - text: Momit
+        href: https://momx.github.io/Momit
+      - text: Momocs2
+        href: https://momx.github.io/Momocs2/
+      - text: Momstats
+        href: https://momx.github.io/Momstats
       - text: -------
       - text: Extended Packages
-      - text: MomData
+      - text: Momoshop
+        href: https://momx.github.io/Momoshop/
+      - text: Momdata
         href: https://momx.github.io/Momdata/
-      - text: MomStats
-        href: https://momx.github.io/Momdtats/
+      - text: Momfarm
+        href: https://momx.github.io/Momfarm
+      - text: -------
+      - text: Legacy Packages
+      - text: Momocs
+        href: https://momx.github.io/Momocs/
+
 
 reference:
 - title: Package installation

@@ -23,14 +23,96 @@ extended <- c(
   # "MomBot",     # Botanical morphometrics
   # "MomArch"     # Archaeological applications
 )
-
-#' List all packages in the MomX ecosystem
+#' List MomX ecosystem packages
 #'
-#' @param include_self Include MomX package itself? Default is FALSE.
-#' @return Character vector of package names
-#' @export
+#' These functions return character vectors of package names in the MomX ecosystem.
+#' Use them to see which packages are available, check installation status, or
+#' programmatically install packages.
+#'
+#' @param include_self For \code{momx_packages()}: Include the MomX meta-package
+#'   itself in the list? Default is \code{FALSE}.
+#'
+#' @return A character vector of package names.
+#'
+#' @details
+#' The MomX ecosystem is organized into two tiers:
+#'
+#' \strong{Core packages} (loaded automatically with \code{library(MomX)}):
+#' \itemize{
+#'   \item \strong{Momocs2}: Core morphometric methods and data structures for
+#'         outline and landmark analysis
+#'   \item \strong{Momacs}: Interactive digitization tools for extracting
+#'         coordinates from images
+#'   \item \strong{Momoshop}: Image processing pipeline builder for reproducible
+#'         preprocessing
+#' }
+#'
+#' \strong{Extended packages} (install separately as needed):
+#' \itemize{
+#'   \item \strong{Momdata}: Curated example datasets for teaching and testing
+#'   \item \strong{Momstats}: Advanced statistical methods for shape analysis
+#' }
+#'
+#' @section Functions:
+#' \describe{
+#'   \item{\code{momx_packages()}}{Returns all packages by reading from the
+#'         MomX DESCRIPTION file. This is the canonical list.}
+#'   \item{\code{momx_packages_core()}}{Returns only core packages that are
+#'         loaded automatically with \code{library(MomX)}.}
+#'   \item{\code{momx_packages_extended()}}{Returns only extended packages that
+#'         should be installed separately.}
+#'   \item{\code{momx_packages_all()}}{Returns all packages (core + extended).
+#'         Equivalent to \code{momx_packages()} but uses the internal vectors.}
+#' }
+#'
+#' @seealso
+#' \itemize{
+#'   \item \code{\link{momx_status}} to see installation status of all packages
+#'   \item \code{\link{momx_install}} to install packages
+#'   \item \code{\link{momx_update}} to update packages
+#'   \item \code{\link{momx_conflicts}} to check for function name conflicts
+#' }
+#'
 #' @examples
+#' # List all packages (from DESCRIPTION)
 #' momx_packages()
+#'
+#' # Include MomX itself
+#' momx_packages(include_self = TRUE)
+#'
+#' # List only core packages
+#' momx_packages_core()
+#'
+#' # List only extended packages
+#' momx_packages_extended()
+#'
+#' # List all packages (core + extended)
+#' momx_packages_all()
+#'
+#' # Check which core packages are installed
+#' core <- momx_packages_core()
+#' installed_core <- core[core %in% rownames(installed.packages())]
+#' installed_core
+#'
+#' # Check which packages are currently loaded
+#' loaded <- momx_packages_all()[
+#'   momx_packages_all() %in% loadedNamespaces()
+#' ]
+#' loaded
+#'
+#' # Count packages by type
+#' cat(sprintf(
+#'   "MomX ecosystem: %d core + %d extended = %d total packages\n",
+#'   length(momx_packages_core()),
+#'   length(momx_packages_extended()),
+#'   length(momx_packages_all())
+#' ))
+#'
+#' @name momx_packages
+NULL
+
+#' @rdname momx_packages
+#' @export
 momx_packages <- function(include_self = FALSE) {
   raw <- utils::packageDescription("MomX")$Package %>%
     strsplit(",") %>%
@@ -43,24 +125,23 @@ momx_packages <- function(include_self = FALSE) {
   raw
 }
 
-#' List core MomX packages
+#' @rdname momx_packages
 #' @export
 momx_packages_core <- function() {
   core
 }
 
-#' List extended MomX packages
+#' @rdname momx_packages
 #' @export
 momx_packages_extended <- function() {
   extended
 }
 
-#' List all MomX packages (core + extended)
+#' @rdname momx_packages
 #' @export
 momx_packages_all <- function() {
   c(core, extended)
 }
-
 # status ----
 
 #' List available MomX packages with status
@@ -258,6 +339,33 @@ momx_install <- function(which = c("core", "extended", "all"),
 
   invisible()
 }
+
+
+#' @rdname momx_install
+#' @export
+momx_install_all_cran <- function() {
+  momx_install("all", from = "cran")
+}
+
+#' @rdname momx_install
+#' @export
+momx_install_core_cran <- function() {
+  momx_install("core", from = "cran")
+}
+
+
+#' @rdname momx_install
+#' @export
+momx_install_all_github <- function() {
+  momx_install("all", from = "github")
+}
+
+#' @rdname momx_install
+#' @export
+momx_install_core_github <- function() {
+  momx_install("core", from = "github")
+}
+
 
 
 # update ----

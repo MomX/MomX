@@ -2,6 +2,10 @@
 
 export(momx_conflicts)
 export(momx_install)
+export(momx_install_all_cran)
+export(momx_install_all_github)
+export(momx_install_core_cran)
+export(momx_install_core_github)
 export(momx_packages)
 export(momx_packages_all)
 export(momx_packages_core)

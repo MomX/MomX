@@ -2,6 +2,10 @@
 % Please edit documentation in R/MomX.R
 \name{momx_install}
 \alias{momx_install}
+\alias{momx_install_all_cran}
+\alias{momx_install_core_cran}
+\alias{momx_install_all_github}
+\alias{momx_install_core_github}
 \title{Install MomX packages}
 \usage{
 momx_install(
@@ -9,6 +13,14 @@ momx_install(
   from = c("cran", "github"),
   force = FALSE
 )
+
+momx_install_all_cran()
+
+momx_install_core_cran()
+
+momx_install_all_github()
+
+momx_install_core_github()
 }
 \arguments{
 \item{which}{Which packages to install? "core" (default), "extended", or "all"}
